@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLine Exam</title>
+
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- 可用<ol>標籤嗎? -->
+
+    <form action="http://localhost/KLine/php/ansInp.php" method="POST">
+
+        <fieldset>
+
+            <div class="subject">
+                <label for="">簡單1</label>
+                <input type="radio" name="num1" id="" value="A" checked>A
+                <input type="radio" name="num1" id="" value="B">B
+                <input type="radio" name="num1" id="" value="C">C
+            </div>
+
+            <div class="subject">
+                <label for="">簡單2</label>
+                <input type="radio" name="num2" id="" value="A" checked>A
+                <input type="radio" name="num2" id="" value="B">B
+                <input type="radio" name="num2" id="" value="C">C
+            </div>
+
+            <div class="subject">
+                <label for="">簡單3</label>
+                <input type="radio" name="num3" id="" value="A" checked>A
+                <input type="radio" name="num3" id="" value="B">B
+                <input type="radio" name="num3" id="" value="C">C
+            </div>
+
+            <div class="subject">
+                <label for="">難1</label>
+                <input type="radio" name="num4" id="" value="A" checked>A
+                <input type="radio" name="num4" id="" value="B">B
+                <input type="radio" name="num4" id="" value="C">C
+            </div>
+
+            <div class="subject">
+                <label for="">難2</label>
+                <input type="radio" name="num5" id="" value="A" checked>A
+                <input type="radio" name="num5" id="" value="B">B
+                <input type="radio" name="num5" id="" value="C">C
+            </div>
+
+            <div class="subject">
+                <label for="">難3</label>
+                <input type="radio" name="num6" id="" value="A" checked>A
+                <input type="radio" name="num6簡單" id="" value="B">B
+                <input type="radio" name="num6簡單" id="" value="C">C
+            </div>
+            
+        </fieldset>
+
+        <input class='sub' type="submit" value="Submit" >
+        <input type="reset" value="Reset" onclick="alert('請重新填寫!')">
+
+    </form>
+    
+</body>
+</html>
