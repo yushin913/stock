@@ -24,49 +24,31 @@ $(document).ready(
 // 同一個 dive 專案中，有多個跳轉鈕
 var checkComplete = setInterval(() => {
 
+    // DIVE 跳轉
     if (diveLinker.getLoadingStatus()) {
 
         var jump1 = diveLinker.getAttr("43594cd0c07b4087bf75317d57d0e183");
+        var jump2 = diveLinker.getAttr("a663eff5ae684bc0aa0cfee088fe9072");
 
         if (jump1 == 1) {
 
-            console.log('check');
+            console.log('check_A');
 
             diveLinker.setProject(13090);
 
             // clearInterval(checkComplete);
-        }
-    }  
-}, 300);
 
-
-// 判斷使用者是否點擊 【跳轉鈕_D部分】
-// 同一個 dive 專案中，有多個跳轉鈕
-var checkComplete = setInterval(() => {
-
-    if (diveLinker.getLoadingStatus()) {
-
-        var jump2 = diveLinker.getAttr("a663eff5ae684bc0aa0cfee088fe9072");
-
-        if (jump2 == 1) {
-
+        }else if (jump2 == 1) {
             console.log('check_D');
 
             diveLinker.setProject(13172);
-
-            // clearInterval(checkComplete);
         }
-    }   
-}, 300);
+    }
 
-
-
-// 返回 教學 dive
-var back = setInterval(() => {
-
+    // 返回
     if (diveLinker.checkComplete()) {
 
-        console.log('check1');
+        console.log('return');
 
         diveLinker.setProject(13173);
 
@@ -75,9 +57,9 @@ var back = setInterval(() => {
         diveLinker.setInput("43594cd0c07b4087bf75317d57d0e183" , 0);
         diveLinker.setInput("a663eff5ae684bc0aa0cfee088fe9072" , 0);
 
-        console.log('u');
+        console.log('return_end');
     }
-    
+
 }, 300);
 
 
