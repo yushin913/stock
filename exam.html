@@ -26,45 +26,45 @@
         <fieldset>
 
             <div class="subject">
-                <label for="">題目1</label>
-                <input type="radio" name="num1" id="" value="A" checked>A
-                <input type="radio" name="num1" id="" value="B">B
-                <input type="radio" name="num1" id="" value="C">C
+                <label for="" class="sub">題目1</label> <br>
+                <input type="radio" name="num1" id="" value="A" checked><label for="num1" class="reply1">A</label>
+                <input type="radio" name="num1" id="" value="B"><label for="num1" class="reply2">B</label>
+                <input type="radio" name="num1" id="" value="C"><label for="num1" class="reply3">C</label>
             </div>
 
             <div class="subject">
-                <label for="">題目2</label>
-                <input type="radio" name="num2" id="" value="A" checked>A
-                <input type="radio" name="num2" id="" value="B">B
-                <input type="radio" name="num2" id="" value="C">C
+                <label for="" class="sub">題目2</label> <br>
+                <input type="radio" name="num2" id="" value="A" checked><label for="num2" class="reply1">A</label>
+                <input type="radio" name="num2" id="" value="B"><label for="num2" class="reply2">B</label>
+                <input type="radio" name="num2" id="" value="C"><label for="num2" class="reply3">C</label>
+            </div>
+
+            <div class="subject" class="sub">
+                <label for="" class="sub">題目3</label> <br>
+                <input type="radio" name="num3" id="" value="A" checked><label for="num3" class="reply1">A</label>
+                <input type="radio" name="num3" id="" value="B"><label for="num3" class="reply2">B</label>
+                <input type="radio" name="num3" id="" value="C"><label for="num3" class="reply3">C</label>
+            </div>
+
+            <div class="subject">
+                <label for="" class="sub">題目4</label> <br>
+                <input type="radio" name="num4" id="" value="A" checked><label for="num4" class="reply1">A</label>
+                <input type="radio" name="num4" id="" value="B"><label for="num4" class="reply2">B</label>
+                <input type="radio" name="num4" id="" value="C"><label for="num4" class="reply3">C</label>
             </div>
 
             <!-- <div class="subject">
-                <label for="">題目3</label>
-                <input type="radio" name="num3" id="" value="A" checked>A
-                <input type="radio" name="num3" id="" value="B">B
-                <input type="radio" name="num3" id="" value="C">C
+                <label for="" class="sub">題目5</label> <br>
+                <input type="radio" name="num5" id="" value="A" checked><label for="num5" class="reply1">A</label>
+                <input type="radio" name="num5" id="" value="B"><label for="num5" class="reply2">B</label>
+                <input type="radio" name="num5" id="" value="C"><label for="num5" class="reply3">C</label>
             </div>
 
             <div class="subject">
-                <label for="">題目4</label>
-                <input type="radio" name="num4" id="" value="A" checked>A
-                <input type="radio" name="num4" id="" value="B">B
-                <input type="radio" name="num4" id="" value="C">C
-            </div>
-
-            <div class="subject">
-                <label for="">題目5</label>
-                <input type="radio" name="num5" id="" value="A" checked>A
-                <input type="radio" name="num5" id="" value="B">B
-                <input type="radio" name="num5" id="" value="C">C
-            </div>
-
-            <div class="subject">
-                <label for="">題目6</label>
-                <input type="radio" name="num6" id="" value="A" checked>A
-                <input type="radio" name="num6簡單" id="" value="B">B
-                <input type="radio" name="num6簡單" id="" value="C">C
+                <label for="" class="sub">題目6</label> <br>
+                <input type="radio" name="num6" id="" value="A" checked><label for="num6" class="reply1">A</label>
+                <input type="radio" name="num6" id="" value="B"><label for="num6" class="reply2">B</label>
+                <input type="radio" name="num6" id="" value="C"><label for="num6" class="reply3">C</label>
             </div> -->
             
         </fieldset>
@@ -77,17 +77,18 @@
 
 <script>
 
-    var label = document.getElementsByTagName('label');
+    var sub = document.getElementsByClassName('sub');
+    var reply1 = document.getElementsByClassName('reply1');
+    var reply2 = document.getElementsByClassName('reply2');
+    var reply3 = document.getElementsByClassName('reply3');
     var jsonLength =0;
-    var test;
 
+    // 讀取 JSON檔
     $.getJSON("subject.json", function (json) {
 
         console.log("success");
 
-        // console.log(json[0]);  // { "num":"1", "test":"你是誰?", "ans1":"A", "ans2":"B", "ans3":"C"}
-
-        // 計算 JSON陣列 中，Object 的數量
+        // 計算 JSON 陣列 中，Object (題目) 的數量
         function getJsonLength(json){
             for (var i in json) {
                 jsonLength++;
@@ -95,10 +96,14 @@
             return jsonLength;
         }
         
-        // 依序，寫入題目
+        // 得出 JSON檔 的長度後，依序寫入題目及選項
         for(var i in json){
-            test = json[i].test;
-            label[i].innerText = test;
+
+            sub[i].innerText = json[i].test;  // 題目的陣列
+
+            reply1[i].innerText = json[i].ans1; // 選項 A 的陣列
+            reply2[i].innerText = json[i].ans2; // 選項 B 的陣列
+            reply3[i].innerText = json[i].ans3; // 選項 C 的陣列
         }
 
     })
