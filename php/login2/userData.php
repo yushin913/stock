@@ -13,20 +13,11 @@
 
     $db->set_charset("utf8mb4");
 
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $num3 = $_POST['num3'];
-    $num4 = $_POST['num4'];
-    $num5 = $_POST['num5'];
-    $num6 = $_POST['num6'];
-    
+    $usrname = $_POST['usrname'];
+    $passwd = $_POST['passwd'];
 
-    $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6')";
+    $sql = "INSERT INTO userdata (usrname ,passwd ) VALUES ('$usrname','$passwd')";
     $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
-    // if($result){
-    //     // header('location:http://localhost/final/form.html'); // submit 不會跳至 php (網頁重新定向) --> 失敗！
-
-    // }
 
 ?>
 
@@ -44,13 +35,14 @@
 
             echo "
             <script>
-                alert('表單送出成功');
-                document.location.href='http://localhost/KLine/php/login2/back_exam.php';  /* 網頁導向的頁面 --> 歷程紀錄 */
+                alert('註冊成功');
+                document.location.href='http://localhost/KLine/php/login2/login.php';
             </script>";
 
         }
     ?>
 
-    <body> 
+    <body>
+
     </body>
 </html>
