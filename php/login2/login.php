@@ -49,7 +49,7 @@
     ?>
         
         <div>KLine 登入/註冊頁面</div>
-        <form method="post" action="check.php">
+        <form method="post" action="http://localhost/KLine/php/login2/check.php">
 
             <?php
                 // 使用 isset 判別有沒有此變數可以使用

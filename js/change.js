@@ -14,6 +14,19 @@ $(document).ready(
                 // clearInterval(checkStart);
             }
         }, 200);
+
+        // 進入【選擇題頁面】
+       var page = setInterval(() => {
+        var an_page = diveLinker.getAttr("1a29214d54a64449adc2d9de1d68b58d");
+        if (an_page == 1) {
+            
+            document.location.href = "http://localhost/KLine/php/login2/back_exam.php";
+
+            clearInterval(page);
+        }
+       }, 200);
+
+
     }
 );
 
@@ -63,13 +76,8 @@ var checkComplete = setInterval(() => {
 }, 300);
 
 
-/**
-    錯誤：0916  [ 0917：目前拿掉 clearInterval 是可以解決以下兩個問題的 ]
 
-    1.返回後，不能再次跳轉 (多個標籤，來回切換會有問題) => 跳轉部分的程式碼要修
-
-    2.浮水印維持關閉
-*/
 
 // 0: {id: "43594cd0c07b4087bf75317d57d0e183", name: "another1", value: "0"}
 // 1: {id: "a663eff5ae684bc0aa0cfee088fe9072", name: "another2", value: "0"}
+// 2: {id: "1a29214d54a64449adc2d9de1d68b58d", name: "選擇題", value: "0"}

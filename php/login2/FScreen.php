@@ -21,7 +21,6 @@
 ?>
 
     <!-- 點擊 button / F11 變為 FullScreen -->
-
     <div id="container">
 
       <iframe src="https://dive.nutn.edu.tw/Experiment/kaleTestExperiment5.jsp?eid=13173&record=false" id="KLine" name="dive1"></iframe>
@@ -35,22 +34,20 @@
         
     </div>
 
-    <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p>
+    <!-- <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p> -->
 
 
     <!-- 讓 iframe 滿版 -->
-    <!-- <script>
+    <script>
 
       var reset = setInterval(() => {
 
         var btn = document.getElementById('KLine');
         btn.style.width = document.body.clientWidth.toString() + "px";
-
-      // btn.style.height = document.body.clientHeight.toString() + "px";
         
       }, 300);
 
-    </script> -->
+    </script>
 
     <!-- 全螢幕 JS -->
     <script src="../../js/fullScreen.js"></script>
@@ -65,5 +62,6 @@ else:
 
 endif;
 ?>
+
 </body>
 </html>

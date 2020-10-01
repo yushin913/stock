@@ -5,8 +5,8 @@
     // 讀取 mySql 資料
     $host = 'localhost';
     $dbuser = 'root';
-    $dbpw = 's10655039';
-    $db_name = 'exam_inp';
+    $dbpw = '';
+    $db_name = 'stock';
     $db = mysqli_connect($host,$dbuser,$dbpw,$db_name);
     if($db->connect_error){
         die('Connect Error：'.$db->connect_error);
