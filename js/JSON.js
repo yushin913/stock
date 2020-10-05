@@ -2,6 +2,7 @@ var sub = document.getElementsByClassName('sub');
 var reply1 = document.getElementsByClassName('reply1');
 var reply2 = document.getElementsByClassName('reply2');
 var reply3 = document.getElementsByClassName('reply3');
+var tmp = document.getElementById("tmp");
 
 // 讀取 JSON檔
 $.getJSON("subject.json", function (json) {
@@ -19,6 +20,7 @@ $.getJSON("subject.json", function (json) {
         result.push(arr.splice(ran, 1)[0]); // 將舊陣列中，亂數選重的數字移除，並新增至新陣列 result
     }
     console.log("choosed：" + result);
+    tmp.value = result;
 
     // 得出 JSON檔 的 Object陣列 後，依照 result陣列 的元素值，依序將對應的 JSON物件(題目) 放入 1~6 題
     for (var i in json) {

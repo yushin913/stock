@@ -19,9 +19,10 @@
     $num4 = $_POST['num4'];
     $num5 = $_POST['num5'];
     $num6 = $_POST['num6'];
+    $choosed = $_POST['choosed'];
     
 
-    $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6')";
+    $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ,choosed ) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6','$choosed')";
     $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
     // if($result){
     //     // header('location:http://localhost/final/form.html'); // submit 不會跳至 php (網頁重新定向) --> 失敗！

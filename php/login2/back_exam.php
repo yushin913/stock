@@ -88,6 +88,9 @@
                 </li>
 
             </ol>
+
+            <!-- 要用 css 隱藏 -->
+            <input type="text" name="choosed" id="tmp"> 
             
         </fieldset>
 
