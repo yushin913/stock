@@ -1,4 +1,4 @@
-<!-- 將答案傳進 mySql -->
+<!-- 註冊資料 mySql -->
 
 <?php
     $host = 'localhost';
@@ -13,11 +13,33 @@
 
     $db->set_charset("utf8mb4");
 
+    // 取得 userdata 資料
+    $get_sql = "SELECT * FROM userdata"; // 選擇 userdata 的資料表
+    $get_result = mysqli_query($db , $get_sql);
+
+    // 取出 DB 中，所有註冊者的 data
+    $users = array();  // 存放所有【user帳密】的陣列
+    while($row = mysqli_fetch_array($get_result , MYSQLI_ASSOC)){ // 一列一列印出資料 (橫列)
+        array_push($users , $row);
+    }
+
+    // 由 signup 表單中，取得準備要註冊的帳密
     $usrname = $_POST['usrname'];
     $passwd = $_POST['passwd'];
 
-    $sql = "INSERT INTO userdata (usrname ,passwd ) VALUES ('$usrname','$passwd')";
-    $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
+    foreach ($users as $person){
+        // 將準備註冊的帳密 與 userdata 中的資料進行比對
+        if($_POST['usrname'] == $person["usrname"] && $_POST['passwd'] == $person["passwd"]){
+            // 已有該名 user
+            header('Location: http://localhost/KLine/php/login2/signup.php?msg=該帳密已有人使用，請重新註冊');
+            
+        }else {
+            // 無該名 user，進行註冊
+            $sql = "INSERT INTO userdata (usrname ,passwd ) VALUES ('$usrname','$passwd')";
+            $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
+
+        }
+    }
 
 ?>
 
@@ -31,15 +53,15 @@
     </head>
 
     <?php
-        if($result){
 
+        if($result){
             echo "
             <script>
                 alert('註冊成功');
                 document.location.href='http://localhost/KLine/php/login2/login.php';
             </script>";
-
         }
+        
     ?>
 
     <body>

@@ -26,10 +26,11 @@
         array_push($users , $row);
     }
     // print_r($users);
+
     // 使用 isset 判別有沒有此變數可以使用(是否存在) 或 此變數 is not null
     if(isset($_POST['username']) && isset($_POST['password'])){
 
-        // 直接對傳進來的帳密(資料)進行比對
+        // 直接對傳進來的帳密(資料)進行比對，看該使用者是否註冊
         foreach ($users as $person){
 
             if($_POST['username'] == $person["usrname"] && $_POST['password'] == $person["passwd"]){
