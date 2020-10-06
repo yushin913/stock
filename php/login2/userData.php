@@ -27,19 +27,29 @@
     $usrname = $_POST['usrname'];
     $passwd = $_POST['passwd'];
 
+    $repeat = 0;
     foreach ($users as $person){
         // 將準備註冊的帳密 與 userdata 中的資料進行比對
         if($_POST['usrname'] == $person["usrname"] && $_POST['passwd'] == $person["passwd"]){
-            // 已有該名 user
-            header('Location: http://localhost/KLine/php/login2/signup.php?msg=該帳密已有人使用，請重新註冊');
-            
-        }else {
-            // 無該名 user，進行註冊
-            $sql = "INSERT INTO userdata (usrname ,passwd ) VALUES ('$usrname','$passwd')";
-            $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
 
+            // 已有該名 user
+            $repeat++;
+            
+            
+            
         }
     }
+    
+    if ($repeat != 0) {
+        // 已有該名 user
+        header('Location: http://localhost/KLine/php/login2/signup.php?msg=你所申請的帳密已有人使用，請重新註冊');
+
+    } else {
+        // 無該名 user，進行註冊
+        $sql = "INSERT INTO userdata (usrname ,passwd ) VALUES ('$usrname','$passwd')";
+        $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
+    }
+    
 
 ?>
 

@@ -65,7 +65,7 @@
                 密碼：<input type="password" name="password">
             </div>
             <button type="submit">登入</button>
-            <button><a href="signup.php">註冊</a></button>
+            <button><a href="http://localhost/KLine/php/login2/signup.php">註冊</a></button>
 
         </form>
     <?php endif; ?>

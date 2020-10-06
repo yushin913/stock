@@ -45,7 +45,7 @@
                 $_SESSION['is_login'] = false;
                 
                 // msg?
-                header('Location: http://localhost/KLine/php/login2/login.php?msg=登入失敗，請確認帳密');
+                header('Location: http://localhost/KLine/php/login2/login.php?msg=登入失敗，請確認帳密或進行註冊');
             }
             
         }

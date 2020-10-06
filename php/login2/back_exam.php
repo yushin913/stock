@@ -95,7 +95,7 @@
         </fieldset>
 
         <input class='submit' type="submit" value="Submit" >
-        <input type="reset" value="Reset" onclick="alert('請重新填寫!')">
+        <!-- <input type="reset" value="Reset" onclick="alert('請重新填寫!')"> -->
 
     </form>
 
