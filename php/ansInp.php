@@ -24,10 +24,6 @@
 
     $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ,choosed ) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6','$choosed')";
     $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
-    // if($result){
-    //     // header('location:http://localhost/final/form.html'); // submit 不會跳至 php (網頁重新定向) --> 失敗！
-
-    // }
 
 ?>
 
@@ -45,8 +41,8 @@
 
             echo "
             <script>
-                alert('表單送出成功');
-                document.location.href='http://localhost/KLine/php/login2/back_exam.php';  /* 網頁導向的頁面 --> 歷程紀錄 */
+                alert('恭喜！測驗提交成功');
+                document.location.href='http://localhost/KLine/php/login2/grade.php';  /* 網頁導向的頁面 --> 歷程紀錄 */
             </script>";
 
         }
