@@ -56,7 +56,6 @@
 
     // 檢查 user 的【答案】是否正確，並 寫入各別 user 的狀態表(1006後者--未處理)
     for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
-        echo "<br>";
 
         for ($j = 0; $j < sizeof($title[$i]) ; $j++) { 
             echo "<br>";
@@ -73,6 +72,7 @@
             }
 
         }
+        echo "<br>";
     }
 
 ?>
@@ -85,8 +85,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>學習紀錄</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <!-- 記得補上【登出】 -->
+    <?php
+
+        for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
+            echo "<table>
+                        <tr>
+                            <th>測驗題順序</th>
+                            <th>所對應之題庫題號</th>
+                            <th>您的回答</th>
+                            <th>正確解答</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>{$title[$i][0]}</td>
+                            <td>{$usr_ans[$i][0]}</td>
+                            <td>{$myarray[$title[$i][0]]['right']}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>{$title[$i][1]}</td>
+                            <td>{$usr_ans[$i][1]}</td>
+                            <td>{$myarray[$title[$i][1]]['right']}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>{$title[$i][2]}</td>
+                            <td>{$usr_ans[$i][2]}</td>
+                            <td>{$myarray[$title[$i][2]]['right']}</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>{$title[$i][3]}</td>
+                            <td>{$usr_ans[$i][3]}</td>
+                            <td>{$myarray[$title[$i][3]]['right']}</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>{$title[$i][4]}</td>
+                            <td>{$usr_ans[$i][4]}</td>
+                            <td>{$myarray[$title[$i][4]]['right']}</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>{$title[$i][5]}</td>
+                            <td>{$usr_ans[$i][5]}</td>
+                            <td>{$myarray[$title[$i][5]]['right']}</td>
+                        </tr>
+                    </table>";
+            
+            echo "<br><br>";
+    
+            
+        }
+
+    ?>
+    
 </body>
 </html>
