@@ -84,6 +84,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>學習紀錄</title>
     <style>
         table, td, th {
@@ -96,6 +97,7 @@
     <?php
 
         for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
+
             echo "<table>
                         <tr>
                             <th>測驗題順序</th>
@@ -106,47 +108,47 @@
                         <tr>
                             <td>1</td>
                             <td>{$title[$i][0]}</td>
-                            <td>{$usr_ans[$i][0]}</td>
-                            <td>{$myarray[$title[$i][0]]['right']}</td>
+                            <td id='usr0'>{$usr_ans[$i][0]}</td>
+                            <td id='ans0'>{$myarray[$title[$i][0]]['right']}</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>{$title[$i][1]}</td>
-                            <td>{$usr_ans[$i][1]}</td>
-                            <td>{$myarray[$title[$i][1]]['right']}</td>
+                            <td id='usr1'>{$usr_ans[$i][1]}</td>
+                            <td id='ans1'>{$myarray[$title[$i][1]]['right']}</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>{$title[$i][2]}</td>
-                            <td>{$usr_ans[$i][2]}</td>
-                            <td>{$myarray[$title[$i][2]]['right']}</td>
+                            <td id='usr2'>{$usr_ans[$i][2]}</td>
+                            <td id='ans2'>{$myarray[$title[$i][2]]['right']}</td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>{$title[$i][3]}</td>
-                            <td>{$usr_ans[$i][3]}</td>
-                            <td>{$myarray[$title[$i][3]]['right']}</td>
+                            <td id='usr3'>{$usr_ans[$i][3]}</td>
+                            <td id='ans3'>{$myarray[$title[$i][3]]['right']}</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>{$title[$i][4]}</td>
-                            <td>{$usr_ans[$i][4]}</td>
-                            <td>{$myarray[$title[$i][4]]['right']}</td>
+                            <td id='usr4'>{$usr_ans[$i][4]}</td>
+                            <td id='ans4'>{$myarray[$title[$i][4]]['right']}</td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>{$title[$i][5]}</td>
-                            <td>{$usr_ans[$i][5]}</td>
-                            <td>{$myarray[$title[$i][5]]['right']}</td>
+                            <td id='usr5'>{$usr_ans[$i][5]}</td>
+                            <td id='ans5'>{$myarray[$title[$i][5]]['right']}</td>
                         </tr>
                     </table>";
             
             echo "<br><br>";
-    
-            
+  
         }
 
     ?>
-    
+
+<script src="../../js/highLight.js"></script> 
 </body>
 </html>
