@@ -25,29 +25,34 @@
 
         array_push($users , $row);
     }
-    // print_r($users);
+    print_r($users);
 
     // 使用 isset 判別有沒有此變數可以使用(是否存在) 或 此變數 is not null
     if(isset($_POST['username']) && isset($_POST['password'])){
 
         // 直接對傳進來的帳密(資料)進行比對，看該使用者是否註冊
-        foreach ($users as $person){
-
-            if($_POST['username'] == $person["usrname"] && $_POST['password'] == $person["passwd"]){
+        for ($i=0 ; $i < count($users) ; $i++) { 
+            # code...
+            if($_POST['username'] == $users[$i]["usrname"] && $_POST['password'] == $users[$i]["passwd"]){
             
                 // 將 session 加入一個【已登入】的值(紀錄)
                 $_SESSION['is_login'] = TRUE;
 
+                // echo "帳號：" . $_POST['username'] ."=" . $users[$i]["usrname"];
+                // echo "密碼：" .$_POST['password'] ."=" . $users[$i]["passwd"] . "<br>";
+
                 // 透過 header 轉址
                 header('Location: http://localhost/KLine/php/login2/FScreen.php');
+                break;
     
             }else {
+
                 $_SESSION['is_login'] = false;
+                // echo "wrong <br>";
                 
                 // msg?
                 header('Location: http://localhost/KLine/php/login2/login.php?msg=登入失敗，請確認帳密或進行註冊');
             }
-            
         }
 
     }else {

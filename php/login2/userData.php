@@ -23,7 +23,7 @@
         array_push($users , $row);
     }
 
-    // 由 signup 表單中，取得準備要註冊的帳密
+    // 由 signup 表單中，取得準備要註冊的帳密 -- 有問題(1012)
     $usrname = $_POST['usrname'];
     $passwd = $_POST['passwd'];
 
@@ -34,9 +34,6 @@
 
             // 已有該名 user
             $repeat++;
-            
-            
-            
         }
     }
     
