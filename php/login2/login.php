@@ -42,7 +42,7 @@
     <?php
         // 使用 isset() 方法，判別有沒有 is_login 變數可使用，有則為為【已登入】
         if(isset($_SESSION['is_login']) && $_SESSION['is_login'] == TRUE):
-            header('Location: http://localhost/KLine/php/login2/FScreen.php');
+            header('Location: http://localhost/KLine/php/login2/getIn.php');
 
         else:
             // 留在登入頁面

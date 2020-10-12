@@ -54,7 +54,7 @@
     // var_dump($myarray); // prints array
 
 
-    // 檢查 user 的【答案】是否正確，並 寫入各別 user 的狀態表(1006後者--未處理)
+    // 檢查 user 的【答案】是否正確，並 寫入各別 user 的狀態表(1006_user狀態表--未處理)
     for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
 
         for ($j = 0; $j < sizeof($title[$i]) ; $j++) { 
@@ -85,7 +85,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <title>學習紀錄</title>
+    <title>股價線圖 -- 新手上路 【學習歷程】</title>
     <style>
         table, td, th {
             border: 1px solid black;
@@ -148,6 +148,8 @@
         }
 
     ?>
+
+    <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p>
 
 <script src="../../js/highLight.js"></script> 
 </body>

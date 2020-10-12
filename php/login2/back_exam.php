@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <title>KLine Exam</title>
+    <title>股價線圖 -- 新手上路 【測驗】</title>
 
     <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -99,7 +99,7 @@
 
     </form>
 
-    <p><a href='logout.php'>登出點我</a></p>
+    <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p>
 
     <script src="../../js/JSON.js"></script>
     

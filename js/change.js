@@ -3,13 +3,12 @@ const diveLinker = new DiveLinker("dive1");
 $(document).ready(
     function () {
         
-        // alert('y'); // 0917 FS提示方法 - 法2
+        // alert('y'); // 0917 Full Screen 提示方法 - 法2
 
         var checkStart = setInterval(() => {
             if (diveLinker.getLoadingStatus()) {
                 
                 diveLinker.enableBlock(false);
-
                 diveLinker.start();
                 // clearInterval(checkStart);
             }
@@ -24,7 +23,7 @@ $(document).ready(
 
             clearInterval(page);
         }
-       }, 200);
+       }, 300);
 
 
     }
@@ -47,14 +46,14 @@ var checkComplete = setInterval(() => {
 
             console.log('check_A');
 
-            diveLinker.setProject(13090);
+            diveLinker.setProject(13090); // 換圖 DIVE
 
             // clearInterval(checkComplete);
 
         }else if (jump2 == 1) {
             console.log('check_D');
 
-            diveLinker.setProject(13172);
+            diveLinker.setProject(13172); // K棒型態 DIVE
         }
     }
 
@@ -63,7 +62,7 @@ var checkComplete = setInterval(() => {
 
         console.log('return');
 
-        diveLinker.setProject(13173);
+        diveLinker.setProject(13173); // 教學 DIVE
 
         // clearInterval(back);
 
@@ -81,3 +80,4 @@ var checkComplete = setInterval(() => {
 // 0: {id: "43594cd0c07b4087bf75317d57d0e183", name: "another1", value: "0"}
 // 1: {id: "a663eff5ae684bc0aa0cfee088fe9072", name: "another2", value: "0"}
 // 2: {id: "1a29214d54a64449adc2d9de1d68b58d", name: "選擇題", value: "0"}
+// 3: {id: "0573a49b04824e7a95851d2435541c98", name: "go_grade" }

@@ -42,7 +42,7 @@
                 // echo "密碼：" .$_POST['password'] ."=" . $users[$i]["passwd"] . "<br>";
 
                 // 透過 header 轉址
-                header('Location: http://localhost/KLine/php/login2/FScreen.php');
+                header('Location: http://localhost/KLine/php/login2/getIn.php');
                 break;
     
             }else {
