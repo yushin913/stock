@@ -13,27 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
     <title>登入</title>
-
-    <style>
-
-        form{
-            border: #aaa solid 2px;
-            margin: 20px auto;
-            padding: 30px;
-            width: 300px;
-        }
-
-        .error{
-            color: red;
-            font-weight: 800;
-        }
-
-        a{
-            text-decoration: none;
-        }
-    
-    </style>
 
 </head>
 
@@ -47,27 +28,31 @@
         else:
             // 留在登入頁面
     ?>
+        <div class="login">
+            <form method="post" action="http://localhost/KLine/php/login2/check.php">
+                <h2>USER　LOGIN</h2>
+
+                <?php
+                    // 使用 isset 判別有沒有此變數可以使用
+                    if(isset($_GET['msg'])){
+                        echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
+                    }
+                ?>
+
+                <div class="group">
+                    <input type="text" name="username" placeholder="使用者 帳號">
+                    <input type="password" name="password" placeholder="使用者 密碼">
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn" type="submit">登入</button>
+                    <button class="btn"><a href="http://localhost/KLine/php/login2/signup.php">註冊</a></button>
+                </div>
+                
+
+            </form>
+        </div>
         
-        <div>KLine 登入/註冊頁面</div>
-        <form method="post" action="http://localhost/KLine/php/login2/check.php">
-
-            <?php
-                // 使用 isset 判別有沒有此變數可以使用
-                if(isset($_GET['msg'])){
-                    echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
-                }
-            ?>
-
-            <div>
-                帳號：<input type="text" name="username">
-            </div>
-            <div>
-                密碼：<input type="password" name="password">
-            </div>
-            <button type="submit">登入</button>
-            <button><a href="http://localhost/KLine/php/login2/signup.php">註冊</a></button>
-
-        </form>
     <?php endif; ?>
 
 </body>

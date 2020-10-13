@@ -1,0 +1,99 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("../imgs/back3.png") no-repeat center center / cover ;
+    /* 對子層物件(class = login)的設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.login{
+    max-width: 380px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.6);
+    border-radius: 8px;
+    box-shadow: 0 0 60px #000;
+    backdrop-filter:blur(5px); /* 使背景模糊，呈現霧面(毛玻璃效果) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+form .group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width: 75%;
+    height: 1.8em;
+    margin: 0.5em;
+    border: 1px solid #aaa;
+    line-height: 3.5;
+    border-radius: 5px;
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+form .btn-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .btn-group .btn{
+    width: 75%;
+    flex-grow: 1;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Microsoft Jhenghei, sana-serif;
+    border-radius: 5px;
+    border: 3px solid  #e79a0a;
+    background-color: #FFB11B;
+    color:#000;
+    margin: 10px 9px;
+    padding: 10px 0;
+    
+}
+
+.error{
+    font-size: 22px;
+    color: red;
+    font-weight: bolder;
+    padding：0;
+    margin:0;
+    width:100%;
+    text-align: center;
+}
