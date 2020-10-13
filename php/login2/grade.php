@@ -48,7 +48,7 @@
 
 
     // 使用 PHP 讀取 JSON檔 -- 重要！！！
-    $get_Json = file_get_contents("subject.json"); // 讀取 JSON檔 資料
+    $get_Json = file_get_contents("formal.json"); // 讀取 JSON檔 資料
     // Json Data Converts to an array
     $myarray = json_decode($get_Json , true); // 【題庫】的陣列
     // var_dump($myarray); // prints array
@@ -64,7 +64,7 @@
 
             // user【答案】 與 題庫【JSON檔】 作比對
             // 10_06_答案比對(OK)
-            if ($usr_ans[$i][$j] == $myarray[$title[$i][$j]]["right"] ) {
+            if ($usr_ans[$i][$j] == $myarray[$title[$i][$j]]['right'] ) {
                 # code... 正解 >> $myarray[$title[$i][$j]]["right"]  / 使用者答案 >> $usr_ans[$i][$j]
                 echo "correct";
             }else{

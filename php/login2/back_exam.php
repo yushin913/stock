@@ -14,6 +14,12 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
+    <style>
+        #tmp{
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -101,7 +107,7 @@
 
     <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p>
 
-    <script src="../../js/JSON.js"></script>
+    <script src="JS/JSON.js"></script>
     
 <?php
     else:
