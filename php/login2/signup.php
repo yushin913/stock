@@ -8,22 +8,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/signup.css">
     <title>註冊頁面</title>
-
-    <style>
-        .error{
-                color: red;
-                font-weight: 800;
-        }
-    </style>
 
 </head>
 <body>
 
 <!-- 當要傳檔案時，必須加上 enctype='multipart/form-data' -->
-    <form action="http://localhost/KLine/php/login2/userData.php" method='post' enctype='multipart/form-data'>
+    <div class="login container">
+        <form action="http://localhost/KLine/php/login2/userData.php" method='post' enctype='multipart/form-data'>
 
-        <fieldset>
+            <h2>SIGN UP</h2>
 
             <?php
                 // 使用 isset 判別有沒有此變數可以使用
@@ -32,13 +29,15 @@
                 }
             ?>
 
-            <legend>註冊資訊</legend>
-            <label for="">帳號：<input type="text" name='usrname' placehodler='請輸入帳號'></label></br>
-            <label for="">密碼：<input type="password" name='passwd' placehodler='請輸入密碼'></label></br>
-        </fieldset>
+            <div class="group">
+                <label class="title" for="">帳號：<input class="inp" type="text" name="usrname" placeholder="註冊帳號"></label>
+                <label class="title" for="">密碼：<input class="inp" type="password" name="passwd" placeholder="註冊密碼"></label>
+            </div>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+    </div>
 
 </body>
 </html>

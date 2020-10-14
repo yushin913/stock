@@ -13,11 +13,6 @@ body{
     align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color:#fff;
-}
-
 .login{
     max-width: 700px;
     border-radius: 8px;
@@ -56,6 +51,10 @@ form .group{
     margin: 20px 0 10px;
 }
 
+form .group label{
+    margin: 10px;
+}
+
 form .title{
     color: #000;
     font-size: 24px;
@@ -76,23 +75,12 @@ form .group .inp{
     color: #555;
 }
 
-form .btn-group{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn{
     /* background-color: blue; */
-}
-
-form .btn-group .btn{
     width: 100%;
     height: 100%;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: Microsoft Jhenghei, sana-serif;
-    border-radius: 5px;
+    margin: auto;
     margin: 15px 10px 35px;
     padding: 8px 0;
-    
+    font-size: 30px;
 }
-

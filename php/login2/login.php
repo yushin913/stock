@@ -44,8 +44,8 @@
                 ?>
 
                 <div class="group">
-                    <input class="inp" type="text" name="username" placeholder="使用者 帳號">
-                    <input class="inp" type="password" name="password" placeholder="使用者 密碼">
+                    <label class="title" for="">帳號：<input class="inp" type="text" name="username" placeholder=""></label>
+                    <label class="title" for="">密碼：<input class="inp" type="password" name="password" placeholder=""></label>
                 </div>
 
                 <div class="btn-group">
@@ -54,6 +54,7 @@
                 </div>
                 
             </form>
+
         </div>
         
     <?php endif; ?>
