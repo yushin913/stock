@@ -13,7 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/login.css">
     <title>登入</title>
 
@@ -29,8 +30,10 @@
         else:
             // 留在登入頁面
     ?>
-        <div class="login">
+        <div class="login container">
+            
             <form method="post" action="http://localhost/KLine/php/login2/check.php">
+                
                 <h2>USER　LOGIN</h2>
 
                 <?php
@@ -41,8 +44,8 @@
                 ?>
 
                 <div class="group">
-                    <input type="text" name="username" placeholder="使用者 帳號">
-                    <input type="password" name="password" placeholder="使用者 密碼">
+                    <input class="inp" type="text" name="username" placeholder="使用者 帳號">
+                    <input class="inp" type="password" name="password" placeholder="使用者 密碼">
                 </div>
 
                 <div class="btn-group">
@@ -50,7 +53,6 @@
                     <button class="btn"><a href="http://localhost/KLine/php/login2/signup.php">註冊</a></button>
                 </div>
                 
-
             </form>
         </div>
         

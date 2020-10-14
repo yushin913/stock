@@ -15,78 +15,28 @@ body{
 
 a{
     text-decoration: none;
-    color:#000;
+    color:#fff;
 }
 
 .login{
-    max-width: 390px;
-    max-height: 350px;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    background-color: rgba(255,255,255,.7);
+    max-width: 700px;
     border-radius: 8px;
-    box-shadow: 0 0 60px #000;
+    background-color: rgba(255,255,255,.8);
     backdrop-filter:blur(5px); /* 使背景模糊，呈現霧面(毛玻璃效果) */
+    box-shadow: 0 0 60px #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-}
-
-form{
-    width: 100%;
-    /* height: 100%; */
 }
 
 form h2{
+    font-size: 48px;
     text-align: center;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 0 8px;
     box-sizing: border-box;
-}
-
-form .group{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form input{
-    width: 75%;
-    height: 1.8em;
-    margin: 0.5em;
-    border: 1px solid #aaa;
-    line-height: 3.5;
-    border-radius: 5px;
-    font-size: 22px;
-    padding-left: 10px;
-}
-
-form .btn-group{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form .btn-group .btn{
-    width: 60%;
-    /* flex-grow: 1; */
-    font-size: 30px;
-    font-weight: 900;
-    font-family: Microsoft Jhenghei, sana-serif;
-    border-radius: 5px;
-    border: 3px solid  #e79a0a;
-    background-color: #FFB11B;
-    color:#000;
-    margin: 8px 10px;
-    padding: 8px 0;
-    
+    font-weight: bolder;
 }
 
 .error{
@@ -94,7 +44,58 @@ form .btn-group .btn{
     color: red;
     font-weight: bolder;
     padding: 0;
-    margin:0;
-    width:100%;
+    margin:5px 0 10px;
     text-align: center;
 }
+
+form .group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .group .inp{
+    width: 85%;
+    height: 1.8em;
+    margin: 0.5em;
+    border: 1px solid #888;
+    background-color: #eee;
+    line-height: 3.5;
+    border-radius: 5px;
+    font-size: 22px;
+    padding-left: 10px;
+    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #555;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #555;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #555;
+}
+
+form .btn-group{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+form .btn-group .btn{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Microsoft Jhenghei, sana-serif;
+    border-radius: 5px;
+    margin: 15px 10px 35px;
+    padding: 8px 0;
+    box-shadow: 5px 8px 20px #333;
+}
+
