@@ -1,4 +1,6 @@
 // Error：只有第一筆資料會變色_1009
+// 是 id 重複的問題? __ 1015
+
 $(document).ready(
 
     function highLight() {
