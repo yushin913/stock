@@ -22,6 +22,7 @@
     // $usr_ans 是 使用者 每次測驗的答案
     $title = []; // 放入該位使用者的作答紀錄(題號)
     $usr_ans = [];  // 放入 user【每次測驗】的回答
+    $timer = [];
 
     while($row = mysqli_fetch_array($result , MYSQLI_ASSOC)){ // 將資料表中每一列的所有值以 Array 的格式印出
 
@@ -37,20 +38,31 @@
             // echo "<br>";
         }
         array_push($usr_ans , $tmp);
-    }
-    echo " usr【答案】 為: ";
-    print_r($usr_ans);
-    echo "<br><br>";
 
-    echo " usr【題號】 為: ";
-    print_r($title);
-    echo "<br><br>";
+        // 取出 使用者 啥時【開始作答】
+        array_push($timer , $row['settime']);
+        echo " ROW: ";
+        print_r($row);
+        echo "<br>";
+    }
+
+    echo " timer: ";
+    print_r($timer);
+
+    // echo " usr【答案 / usr_ans】 為: ";
+    // print_r($usr_ans);
+    // echo "<br>";
+
+    // echo " usr【題號 / title】 為: ";
+    // print_r($title);
+    // echo "<br>";
+
 
 
     // 使用 PHP 讀取 JSON檔 -- 重要！！！
     $get_Json = file_get_contents("formal.json"); // 讀取 JSON檔 資料
     // Json Data Converts to an array
-    $myarray = json_decode($get_Json , true); // 【題庫】的陣列
+    $myarray = json_decode($get_Json , true); // 【formal 題庫】的陣列
     // var_dump($myarray); // prints array
 
 
@@ -93,12 +105,13 @@
     </style>
 </head>
 <body>
-    <!-- 記得補上【登出】 -->
+    
     <?php
 
         for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
 
-            echo "<table>
+            echo "  <p>作答日期與時間：{$timer[$i]}</p>
+                    <table>
                         <tr>
                             <th>測驗題順序</th>
                             <th>所對應之題庫題號</th>
@@ -144,13 +157,14 @@
                     </table>";
             
             echo "<br><br>";
-  
+
         }
 
     ?>
 
+    <!-- 記得補上【登出】 -->
     <p><a href='http://localhost/KLine/php/login2/logout.php'>登出點我</a></p>
 
-<script src="../../js/highLight.js"></script> 
+<script src="JS/highLight.js"></script> 
 </body>
 </html>
