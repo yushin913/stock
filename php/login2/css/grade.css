@@ -1,0 +1,59 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("../imgs/back3.png") no-repeat center center / cover ;
+    background-attachment: fixed;
+    
+}
+
+.container{
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter:blur(5px); /* 使背景模糊，呈現霧面(毛玻璃效果) */
+    padding: 5px 20px;
+    
+}
+
+/* 表格 */
+.grade{
+    /* max-width: 90%; */
+    padding: 10px 35px 10px;
+    margin: 25px auto;
+    /* background-color:#bbeb8b;
+    border-radius: 8px; */
+}
+
+table{
+    text-align: center;
+}
+
+table,
+table th.number{
+    background-color: #FCFAF2;
+    color: #000;
+}
+
+table, th, tr, td{
+    border: 2px solid #555;
+}
+
+table thead{
+    font-size: 22px;
+    background-color: #332d2c;
+    color: #FCFAF2;
+}
+
+table tbody{
+    font-size: 20px;
+}
+
+p.time{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
