@@ -121,21 +121,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Study</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Quiz</a>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Grade</a>
-            </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php">Logout</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/FScreen.php">Study</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/back_exam.php">Quiz</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Grade</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php">Logout</a>
+                </li>
             </ul>
         </div>
     </nav>
