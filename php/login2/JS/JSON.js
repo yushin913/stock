@@ -23,12 +23,15 @@ $.getJSON("formal.json", function (json) {
     tmp.value = result;
 
     // 得出 JSON檔 的 Object陣列 後，依照 result陣列 的元素值，依序將對應的 JSON物件(題目) 放入 1~6 題
-    for (var i in json) {
-        sub[i].innerText = json[result[i]].test; // 題目的陣列
+    for (var j in json) {
+        
+        // 1019_題號有問題
+        sub[j].innerHTML = "題目" + "k" + "：<br>" + json[result[j]].test; // 題目的陣列
 
-        reply1[i].innerText = json[result[i]].ans1; // 選項 A 的陣列
-        reply2[i].innerText = json[result[i]].ans2; // 選項 B 的陣列
-        reply3[i].innerText = json[result[i]].ans3; // 選項 C 的陣列
+        reply1[j].innerText = json[result[j]].ans1; // 選項 A 的陣列
+        reply2[j].innerText = json[result[j]].ans2; // 選項 B 的陣列
+        reply3[j].innerText = json[result[j]].ans3; // 選項 C 的陣列
+        
     }
     
 })

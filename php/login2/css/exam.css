@@ -1,0 +1,93 @@
+html, body{
+    /* height: 100%; */
+}
+
+body{
+    background-color: #332d2c;
+}
+
+div.container{
+    max-width: 70%;
+    /* min-width: 400px; */
+    margin: auto;
+    border: 5px solid #e79a0a;
+    padding: 25px 45px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form .submit{ /* 按鈕 */
+    margin: 5em 0 10px;
+}
+
+/* 選項 與 圖片 的排版 */
+form .item{
+    margin: 25px 0;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+}
+
+.item-block{
+    margin-top: 15px;
+    display: flex;
+}
+
+.item-block .son{
+    /* border: 1px solid red; */
+}
+
+.item-block .txt{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    /* padding-top: 10px; */
+}
+.item-block .pic{
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* 選項排版 */
+.item-block .txt label{
+    margin-bottom: 25px;
+}
+.item-block .txt label input{
+    padding: 5px;
+}
+
+/* 圖片的垂直置中 */
+.item-block .pic img{
+    width: 25%;
+    vertical-align: middle;
+    margin: auto;
+}
+
+/* 【文字與圖片】部分的 RWD */
+@media (max-width: 768px) {
+
+    div.container{
+        max-width: 85%;
+    }
+
+    .item-block{
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+
+    .item-block .txt{
+        padding-top: 20px;
+    }
+
+    /* .item-block .pic img{
+        width: 25%;
+    } */
+
+}
