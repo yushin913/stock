@@ -149,7 +149,7 @@
                 $count = $i + 1;
 
                 echo "<div class='grade'>
-                        <p class='time'>第{$count}次測驗：{$timer[$i]}</p>
+                        <p class='time'>第 {$count} 次測驗：{$timer[$i]}</p>
                         <table class='table table-striped'>
                             <thead>
                                 <tr>
