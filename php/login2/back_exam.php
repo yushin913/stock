@@ -14,8 +14,6 @@
 
     <title>股價線圖 -- 新手上路 【測驗】</title>
 
-
-
 </head>
 <body>
 

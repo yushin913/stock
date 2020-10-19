@@ -23,10 +23,11 @@ $.getJSON("formal.json", function (json) {
     tmp.value = result;
 
     // 得出 JSON檔 的 Object陣列 後，依照 result陣列 的元素值，依序將對應的 JSON物件(題目) 放入 1~6 題
+    var order = 0; // exam 的測驗題【順序】
     for (var j in json) {
         
-        // 1019_題號有問題
-        sub[j].innerHTML = "題目" + "k" + "：<br>" + json[result[j]].test; // 題目的陣列
+        order ++; 
+        sub[j].innerHTML = "題目" + order + "：<br>" + json[result[j]].test; // 題目的陣列
 
         reply1[j].innerText = json[result[j]].ans1; // 選項 A 的陣列
         reply2[j].innerText = json[result[j]].ans2; // 選項 B 的陣列
