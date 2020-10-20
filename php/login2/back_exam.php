@@ -22,12 +22,12 @@
     if(isset($_SESSION['is_login']) && $_SESSION['is_login']== TRUE):
 ?>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" style="position: relative;">
         <a class="navbar-brand mb-0 h1" href="#" style="font-size: 24px;"><?php echo '你好~ ' . $_SESSION['usr_now']; ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 36px;">
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 36px; position: absolute; right: 0; font-weight: 500;">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">Home</a>
@@ -42,7 +42,7 @@
             </li>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php">Logout</a>
+                <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php" style="color: #fff;">Logout</a>
             </li>
           </ul>
         </div>
