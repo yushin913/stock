@@ -50,10 +50,10 @@
     </script>
 
     <!-- 全螢幕 JS -->
-    <script src="../../js/fullScreen.js"></script>
+    <script src="JS/fullScreen.js"></script>
     <!-- Dive 跳轉 JS -->
     <script src="https://dive.nutn.edu.tw/Experiment/js/dive.linker.min.js"></script>
-    <script src="../../js/change.js"></script>
+    <script src="JS/change.js"></script>
 
 <?php
 else:
