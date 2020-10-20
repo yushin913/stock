@@ -38,6 +38,9 @@
                 // 將 session 加入一個【已登入】的值(紀錄)
                 $_SESSION['is_login'] = TRUE;
 
+                // 將 session 加入一個【目前登入者 名稱】的值(紀錄)
+                $_SESSION['usr_now'] = $users[$i]["usrname"];
+
                 // echo "帳號：" . $_POST['username'] ."=" . $users[$i]["usrname"];
                 // echo "密碼：" .$_POST['password'] ."=" . $users[$i]["passwd"] . "<br>";
 

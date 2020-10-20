@@ -23,11 +23,11 @@
 ?>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand mb-0 h1" href="#" style="font-size: 26px;">Navbar</a>
+        <a class="navbar-brand mb-0 h1" href="#" style="font-size: 24px;"><?php echo '你好~ ' . $_SESSION['usr_now']; ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 36px;">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">Home</a>
