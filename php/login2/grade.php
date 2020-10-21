@@ -119,22 +119,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 45px; font-weight: 500;">
+        <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 45px; font-weight: 700;">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">Home</a>
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/FScreen.php">Study</a>
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/FScreen.php">教學</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/back_exam.php">Quiz</a>
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/back_exam.php">測驗</a>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Grade</a>
+                    <a class="nav-link" href="#">紀錄</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php" style="color: #fff;">Logout</a>
+                    <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php" style="color: #fff;">登出</a>
                 </li>
             </ul>
         </div>
