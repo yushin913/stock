@@ -2,6 +2,7 @@ var sub = document.getElementsByClassName('sub');
 var reply1 = document.getElementsByClassName('reply1');
 var reply2 = document.getElementsByClassName('reply2');
 var reply3 = document.getElementsByClassName('reply3');
+var image = document.getElementsByClassName('image');
 var tmp = document.getElementById("tmp");
 
 // 讀取 JSON檔
@@ -32,6 +33,8 @@ $.getJSON("formal.json", function (json) {
         reply1[j].innerText = json[result[j]].ans1; // 選項 A 的陣列
         reply2[j].innerText = json[result[j]].ans2; // 選項 B 的陣列
         reply3[j].innerText = json[result[j]].ans3; // 選項 C 的陣列
+
+        image[j].src = json[result[j]].pic; // 選項若有圖片，則放置圖片；若無圖則，空著
         
     }
     
