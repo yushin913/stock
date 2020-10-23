@@ -6,7 +6,7 @@ html,body{
 }
 
 body{
-    background: url("../imgs/back3.png") no-repeat center center / cover ;
+    background: url("../imgs/back3_7.png") no-repeat center center / cover;
     /* 對子層物件(class = login)的設定 */
     display: flex;
     justify-content: center;
@@ -19,16 +19,12 @@ a{
 }
 
 .login{
-    max-width: 700px;
-    border-radius: 8px;
-    background-color: rgba(255,255,255,.8);
-    backdrop-filter:blur(5px); /* 使背景模糊，呈現霧面(毛玻璃效果) */
-    box-shadow: 0 0 60px #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 form h2{
     font-size: 48px;
@@ -37,11 +33,13 @@ form h2{
     padding: 0 8px;
     box-sizing: border-box;
     font-weight: bolder;
+    color: #fff;
 }
 
 .error{
     font-size: 22px;
-    color: red;
+    color: #f00;
+    background-color: rgba(255,255,255,.8);
     font-weight: bolder;
     padding: 0;
     margin:5px 0 10px;
@@ -57,7 +55,8 @@ form .group{
 }
 
 form .title{
-    color: #000;
+    font-weight: 700;
+    color: #fff;
     font-size: 24px;
 }
 
@@ -77,11 +76,10 @@ form .group .inp{
 }
 
 form .btn-group{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: blue; */
 }
 
 form .btn-group .btn{
@@ -93,6 +91,5 @@ form .btn-group .btn{
     border-radius: 5px;
     margin: 15px 10px 35px;
     padding: 8px 0;
-    
 }
 

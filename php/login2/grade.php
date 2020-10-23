@@ -163,43 +163,43 @@
                             <tr>
                                 <th class='number bg-info' scope='row'>1</th>
                                 <td><a href='#'>{$title[$i][0]}</a></td>
-                                <td>{$usr_ans[$i][0]}</td>
-                                <td>{$myarray[$title[$i][0]]['right']}</td>
+                                <td id='usr1'>{$usr_ans[$i][0]}</td>
+                                <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>2</th>
                                 <td><a href='#'>{$title[$i][1]}</a></td>
-                                <td>{$usr_ans[$i][1]}</td>
-                                <td>{$myarray[$title[$i][1]]['right']}</td>
+                                <td id='usr2'>{$usr_ans[$i][1]}</td>
+                                <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>3</th>
                                 <td><a href='#'>{$title[$i][2]}</a></td>
-                                <td>{$usr_ans[$i][2]}</td>
-                                <td>{$myarray[$title[$i][2]]['right']}</td>
+                                <td id='usr3'>{$usr_ans[$i][2]}</td>
+                                <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>4</th>
                                 <td><a href='#'>{$title[$i][3]}</a></td>
-                                <td>{$usr_ans[$i][3]}</td>
-                                <td>{$myarray[$title[$i][3]]['right']}</td>
+                                <td id='usr4'>{$usr_ans[$i][3]}</td>
+                                <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>5</th>
                                 <td><a href='#'>{$title[$i][4]}</a></td>
-                                <td>{$usr_ans[$i][4]}</td>
-                                <td>{$myarray[$title[$i][4]]['right']}</td>
+                                <td id='usr5'>{$usr_ans[$i][4]}</td>
+                                <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>6</th>
                                 <td><a href='#'>{$title[$i][5]}</a></td>
-                                <td>{$usr_ans[$i][5]}</td>
-                                <td>{$myarray[$title[$i][5]]['right']}</td>
+                                <td id='usr6'>{$usr_ans[$i][5]}</td>
+                                <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
                             </tr>
 
                             </tbody>
@@ -220,6 +220,6 @@ endif;
 ?>
 
 
-<script src="JS/highLight.js"></script> 
+<!-- <script src="JS/highLight.js"></script>  -->
 </body>
 </html>
