@@ -101,7 +101,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/grade.css">
     <title>股價線圖 -- 新手上路 【學習歷程】</title>
@@ -162,14 +162,14 @@
                             <tbody>
                             <tr>
                                 <th class='number bg-info' scope='row'>1</th>
-                                <td><a href='#'>{$title[$i][0]}</a></td>
+                                <td><a href='#' onclick='show({$title[$i][0]});' >{$title[$i][0]}</a></td>
                                 <td id='usr1'>{$usr_ans[$i][0]}</td>
                                 <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
                             </tr>
 
                             <tr>
                                 <th class='number bg-info' scope='row'>2</th>
-                                <td><a href='#'>{$title[$i][1]}</a></td>
+                                <td><a href='#' onclick='show({$title[$i][1]});' >{$title[$i][1]}</a></td>
                                 <td id='usr2'>{$usr_ans[$i][1]}</td>
                                 <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
                             </tr>
@@ -210,6 +210,8 @@
         ?>
 
     </div>
+
+    <script src="JS/show.js"></script>
 
 <?php
 else:
