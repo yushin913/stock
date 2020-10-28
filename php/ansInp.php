@@ -1,6 +1,9 @@
 <!-- 將答案傳進 mySql -->
 
 <?php
+    session_start();
+
+    // 連線設定
     $host = 'localhost';
     $dbuser = 'root';
     $dbpw = '';
@@ -26,8 +29,11 @@
     date_default_timezone_set("Asia/Taipei");  // 設定時區
     $settime = date("F d, Y => h:i:s A");
     
+    // 目前登入的使用者
+    $who = $_SESSION['usr_now'];
+    
 
-    $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ,choosed ,settime ) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6','$choosed','$settime')";
+    $sql = "INSERT INTO ansinput (num1 ,num2 ,num3 ,num4 ,num5 ,num6 ,choosed ,settime ,who) VALUES ('$num1','$num2','$num3','$num4','$num5','$num6','$choosed','$settime','$who')";
     $result = mysqli_query($db,$sql); // 執行 SQL 查詢 (將上面的設定送出)
 
 ?>
