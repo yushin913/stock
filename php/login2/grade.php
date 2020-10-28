@@ -1,10 +1,6 @@
 <!-- 歷程記錄 -- 正式版 -->
-<!-- 10/06_缺少 登入檢核機制 -->
-
 <?php
-
     session_start();
-
 
     // 連線
     $host = 'localhost';
@@ -22,31 +18,37 @@
     $result = mysqli_query($db , $sql); // 執行 SQL 查詢 (將上面設定的指令送出)
 
     // 處理 mySql 資料
-    // $usr_ans 是 使用者 每次測驗的答案
+    $now = []; // 存放【當前】登入者的所有資料比數
+
     $title = []; // 放入該位使用者的作答紀錄(題號)
-    $usr_ans = [];  // 放入 user【每次測驗】的回答
+    $usr_ans = [];  // 放入 user【每次測驗】的回答  // $usr_ans 是【使用者】每次測驗的答案
     $timer = [];
 
     while($row = mysqli_fetch_array($result , MYSQLI_ASSOC)){ // 將資料表中每一列的所有值以 Array 的格式印出
 
+        if ($row['who'] == $_SESSION['usr_now']) {
+            # 由DB中，只取出【目前】登入者的資料
+            array_push($now , $row);
+        }
+    }
+
+    // 對【當前】使用者的資料做處理
+    for ($m  =0; $m < sizeof($now) ; $m++) {
         // 取出 使用者 回答的 【題號(題目)】
-        $jit = explode("," , $row['choosed']); // 把選中題目(的題號)的字串，轉乘 array
+        $jit = explode("," , $now[$m]['choosed']); // 把選中題目(的題號)的字串，轉乘 array
         array_push($title , $jit);
 
         // 取出 使用者 的【回答(答案)】
         $tmp = []; // 暫時存放 user【一次測驗】中的回答
         for ($a = 1; $a < 7; $a++) { // 取出每次測驗中的答案，以測驗次數為一個單位
-            array_push($tmp , $row["num{$a}"]);
+            array_push($tmp , $now[$m]["num{$a}"]);
             // print_r($tmp);
             // echo "<br>";
         }
         array_push($usr_ans , $tmp);
 
-        // 取出 使用者 啥時【開始作答】
-        array_push($timer , $row['settime']);
-        // echo " ROW: ";
-        // print_r($row);
-        // echo "<br>";
+        // 取出使用者【開始作答的時間點】
+        array_push($timer , $now[$m]['settime']);
     }
 
     // echo " timer: ";
