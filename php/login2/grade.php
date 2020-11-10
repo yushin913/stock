@@ -178,8 +178,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][0]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr1'>{$usr_ans[$i][0]}</td>
-                                        <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
+                                        <td id='usr{$count}1'>{$usr_ans[$i][0]}</td>
+                                        <td id='ans{$count}1'>{$myarray[$title[$i][0]]['right']}</td>
                                     </tr>
 
                                     <tr>
@@ -193,8 +193,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][1]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr2'>{$usr_ans[$i][1]}</td>
-                                        <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
+                                        <td id='usr{$count}2'>{$usr_ans[$i][1]}</td>
+                                        <td id='ans{$count}2'>{$myarray[$title[$i][1]]['right']}</td>
                                     </tr>
 
                                     <tr>
@@ -208,8 +208,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][2]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr3'>{$usr_ans[$i][2]}</td>
-                                        <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
+                                        <td id='usr{$count}3'>{$usr_ans[$i][2]}</td>
+                                        <td id='ans{$count}3'>{$myarray[$title[$i][2]]['right']}</td>
                                     </tr>
 
                                     <tr>
@@ -223,8 +223,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][3]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr4'>{$usr_ans[$i][3]}</td>
-                                        <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
+                                        <td id='usr{$count}4'>{$usr_ans[$i][3]}</td>
+                                        <td id='ans{$count}4'>{$myarray[$title[$i][3]]['right']}</td>
                                     </tr>
 
                                     <tr>
@@ -238,8 +238,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][4]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr5'>{$usr_ans[$i][4]}</td>
-                                        <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
+                                        <td id='usr{$count}5'>{$usr_ans[$i][4]}</td>
+                                        <td id='ans{$count}5'>{$myarray[$title[$i][4]]['right']}</td>
                                     </tr>
 
                                     <tr>
@@ -253,8 +253,8 @@
                                                 <img class='picture' src='{$myarray[$title[$i][5]]['pic']}'>
                                             </div>
                                         </td>
-                                        <td id='usr6'>{$usr_ans[$i][5]}</td>
-                                        <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
+                                        <td id='usr{$count}6'>{$usr_ans[$i][5]}</td>
+                                        <td id='ans{$count}6'>{$myarray[$title[$i][5]]['right']}</td>
                                     </tr>
 
                                 </tbody>
