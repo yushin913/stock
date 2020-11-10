@@ -72,9 +72,9 @@
 
 
     // 檢查 user 的【答案】是否正確，並 寫入各別 user 的狀態表(1006_user狀態表--未處理)
-    for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
+    for ($a = 0; $a < sizeof($title) ; $a++) { // i 為測驗的次數
 
-        for ($j = 0; $j < sizeof($title[$i]) ; $j++) { 
+        for ($b = 0; $b < sizeof($title[$a]) ; $b++) { 
             // echo "<br>";
             // print_r($title[$i][$j]);  // 印出【選擇的題號】
             // echo " => ";
@@ -82,11 +82,11 @@
 
             // user【答案】 與 題庫【JSON檔】 作比對
             // 10_06_答案比對(OK)
-            if ($usr_ans[$i][$j] == $myarray[$title[$i][$j]]['right'] ) {
-                # code... 正解 >> $myarray[$title[$i][$j]]["right"]  / 使用者答案 >> $usr_ans[$i][$j]
+            if ($usr_ans[$a][$b] == $myarray[$title[$a][$b]]['right'] ) {
+                # code... 正解 >> $myarray[$title[$a][$b]]["right"]  / 使用者答案 >> $usr_ans[$a][$j]
                 // echo "correct";
             }else{
-                // echo "incorrect! {$usr_ans[$i][$j]} != {$myarray[$title[$i][$j]]['right']} ";
+                // echo "incorrect! {$usr_ans[$a][$b]} != {$myarray[$title[$a][$b]]['right']} ";
             }
 
         }
@@ -170,10 +170,10 @@
                                     <tr>
                                         <th class='number bg-info' scope='row'>1</th>
                                         <td class='show'>
-                                            <div class='flip' onclick='insert({$title[$i][0]});'>
+                                            <div class='flip' onclick='insert({$count}1{$title[$i][0]});'>
                                                 <span class='1'>{$title[$i][0]}</span>
                                             </div>
-                                            <div id='panel{$title[$i][0]}' class='block'>
+                                            <div id='panel{$count}1{$title[$i][0]}' class='block'>
                                                 <p>{$myarray[$title[$i][0]]['test']}</p>
                                                 <img class='picture' src='{$myarray[$title[$i][0]]['pic']}'>
                                             </div>
@@ -184,35 +184,75 @@
 
                                     <tr>
                                         <th class='number bg-info' scope='row'>2</th>
-                                        <td id ='hint{$title[$i][1]}'><p onclick='show({$title[$i][1]});' >{$title[$i][1]}</p></td>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$count}2{$title[$i][1]});'>
+                                                <span class='1'>{$title[$i][1]}</span>
+                                            </div>
+                                            <div id='panel{$count}2{$title[$i][1]}' class='block'>
+                                                <p>{$myarray[$title[$i][1]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][1]]['pic']}'>
+                                            </div>
+                                        </td>
                                         <td id='usr2'>{$usr_ans[$i][1]}</td>
                                         <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
                                     </tr>
 
                                     <tr>
                                         <th class='number bg-info' scope='row'>3</th>
-                                        <td><p onclick='show({$title[$i][2]});' >{$title[$i][2]}</p></td>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$count}3{$title[$i][2]});'>
+                                                <span class='1'>{$title[$i][2]}</span>
+                                            </div>
+                                            <div id='panel{$count}3{$title[$i][2]}' class='block'>
+                                                <p>{$myarray[$title[$i][2]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][2]]['pic']}'>
+                                            </div>
+                                        </td>
                                         <td id='usr3'>{$usr_ans[$i][2]}</td>
                                         <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
                                     </tr>
 
                                     <tr>
                                         <th class='number bg-info' scope='row'>4</th>
-                                        <td><p onclick='show({$title[$i][3]});' >{$title[$i][3]}</p></td>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$count}4{$title[$i][3]});'>
+                                                <span class='1'>{$title[$i][3]}</span>
+                                            </div>
+                                            <div id='panel{$count}4{$title[$i][3]}' class='block'>
+                                                <p>{$myarray[$title[$i][3]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][3]]['pic']}'>
+                                            </div>
+                                        </td>
                                         <td id='usr4'>{$usr_ans[$i][3]}</td>
                                         <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
                                     </tr>
 
                                     <tr>
                                         <th class='number bg-info' scope='row'>5</th>
-                                        <td><p onclick='show({$title[$i][4]});' >{$title[$i][4]}</p></td>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$count}5{$title[$i][4]});'>
+                                                <span class='1'>{$title[$i][4]}</span>
+                                            </div>
+                                            <div id='panel{$count}5{$title[$i][4]}' class='block'>
+                                                <p>{$myarray[$title[$i][4]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][4]]['pic']}'>
+                                            </div>
+                                        </td>
                                         <td id='usr5'>{$usr_ans[$i][4]}</td>
                                         <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
                                     </tr>
 
                                     <tr>
                                         <th class='number bg-info' scope='row'>6</th>
-                                        <td><p onclick='show({$title[$i][5]});' >{$title[$i][5]}</p></td>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$count}6{$title[$i][5]});'>
+                                                <span class='1'>{$title[$i][5]}</span>
+                                            </div>
+                                            <div id='panel{$count}6{$title[$i][5]}' class='block'>
+                                                <p>{$myarray[$title[$i][5]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][5]]['pic']}'>
+                                            </div>
+                                        </td>
                                         <td id='usr6'>{$usr_ans[$i][5]}</td>
                                         <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
                                     </tr>
@@ -254,6 +294,6 @@ endif;
 ?>
 
 
-<!-- <script src="JS/highLight.js"></script>  -->
+<script src="JS/highLight.js"></script>
 </body>
 </html>
