@@ -6,7 +6,7 @@ html,body{
 }
 
 body{
-    background: url("../imgs/back3.png") no-repeat center center / cover ;
+    background: url("../imgs/back3_7.png") no-repeat center center / cover ;
     background-attachment: fixed;
     
 }
@@ -15,7 +15,7 @@ body{
     background-color: rgb(255, 255, 255, 0.7);
     backdrop-filter:blur(5px); /* 使背景模糊，呈現霧面(毛玻璃效果) */
     padding: 5px 20px;
-    
+    height: 100%;
 }
 
 /* 表格 */
@@ -86,4 +86,77 @@ img.picture{ /* 直向橫向可能會有問題 */
     width: 200px;
     height: 300px;
     margin: 8px 0 10px;
+}
+
+/* 無使用紀錄 */
+div.pos{
+    background-color:  rgb(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+div.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+div.svgPic{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+svg {
+    background-color: #fff;
+}
+
+#icon-page .page-outline {
+    -webkit-animation-name: line1;
+    animation-name: line1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+#icon-page .page-line {
+    -webkit-animation-name: line1;
+    animation-name: line1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes line1 {
+    to {
+            stroke-dashoffset: 0;
+    }
+}
+
+@keyframes line1 {
+    to {
+            stroke-dashoffset: 0;
+    }
+}
+
+p#noLog{
+    margin-top: 1.2em;
+    font-size: 32px;
+    font-weight: 500;
+    color: #eee;
 }

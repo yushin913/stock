@@ -43,7 +43,5 @@ $(document).ready(
 );
 
 // 登入後，有兩個選項頁面【教學與測驗 / 學習歷程】
-
-
 // 0: {id: "db8f71dc0c744426b40b72ae5ca35c45", name: "go_FS", value: "0"}
 // 1: {id: "bf7352f1cf4e48fe96147ffc705bf604", name: "go_grade", value: "0"}

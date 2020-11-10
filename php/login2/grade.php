@@ -142,86 +142,108 @@
         </div>
     </nav>
 
+    <?php
+        // 使用 isset() 方法，判別有沒有 is_login 變數可使用，以及為【已登入】
+        if(sizeof($title) != 0 ):
+    ?>
 
-    <div class="container">
 
-        <?php
+        <div class="container">
 
-            for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
-                $count = $i + 1;
+            <?php
 
-                echo "<div class='grade'>
-                        <p class='time'>第 {$count} 次測驗：{$timer[$i]}</p>
-                        <table class='table table-striped'>
-                            <thead>
-                                <tr>
-                                    <th scope='col'>測驗題順序</th>
-                                    <th scope='col'>題庫題號</th>
-                                    <th scope='col'>您的回答</th>
-                                    <th scope='col'>正確解答</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class='number bg-info' scope='row'>1</th>
-                                    <td class='show'>
-                                        <div class='flip' onclick='insert({$title[$i][0]});'>
-                                            <span class='1'>{$title[$i][0]}</span>
-                                        </div>
-                                        <div id='panel{$title[$i][0]}' class='block'>
-                                            <p>{$myarray[$title[$i][0]]['test']}</p>
-                                            <img class='picture' src='{$myarray[$title[$i][0]]['pic']}'>
-                                        </div>
-                                    </td>
-                                    <td id='usr1'>{$usr_ans[$i][0]}</td>
-                                    <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
-                                </tr>
+                for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
+                    $count = $i + 1;
 
-                                <tr>
-                                    <th class='number bg-info' scope='row'>2</th>
-                                    <td id ='hint{$title[$i][1]}'><p onclick='show({$title[$i][1]});' >{$title[$i][1]}</p></td>
-                                    <td id='usr2'>{$usr_ans[$i][1]}</td>
-                                    <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
-                                </tr>
+                    echo "<div class='grade'>
+                            <p class='time'>第 {$count} 次測驗：{$timer[$i]}</p>
+                            <table class='table table-striped'>
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>測驗題順序</th>
+                                        <th scope='col'>題庫題號</th>
+                                        <th scope='col'>您的回答</th>
+                                        <th scope='col'>正確解答</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>1</th>
+                                        <td class='show'>
+                                            <div class='flip' onclick='insert({$title[$i][0]});'>
+                                                <span class='1'>{$title[$i][0]}</span>
+                                            </div>
+                                            <div id='panel{$title[$i][0]}' class='block'>
+                                                <p>{$myarray[$title[$i][0]]['test']}</p>
+                                                <img class='picture' src='{$myarray[$title[$i][0]]['pic']}'>
+                                            </div>
+                                        </td>
+                                        <td id='usr1'>{$usr_ans[$i][0]}</td>
+                                        <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
+                                    </tr>
 
-                                <tr>
-                                    <th class='number bg-info' scope='row'>3</th>
-                                    <td><p onclick='show({$title[$i][2]});' >{$title[$i][2]}</p></td>
-                                    <td id='usr3'>{$usr_ans[$i][2]}</td>
-                                    <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
-                                </tr>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>2</th>
+                                        <td id ='hint{$title[$i][1]}'><p onclick='show({$title[$i][1]});' >{$title[$i][1]}</p></td>
+                                        <td id='usr2'>{$usr_ans[$i][1]}</td>
+                                        <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
+                                    </tr>
 
-                                <tr>
-                                    <th class='number bg-info' scope='row'>4</th>
-                                    <td><p onclick='show({$title[$i][3]});' >{$title[$i][3]}</p></td>
-                                    <td id='usr4'>{$usr_ans[$i][3]}</td>
-                                    <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
-                                </tr>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>3</th>
+                                        <td><p onclick='show({$title[$i][2]});' >{$title[$i][2]}</p></td>
+                                        <td id='usr3'>{$usr_ans[$i][2]}</td>
+                                        <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
+                                    </tr>
 
-                                <tr>
-                                    <th class='number bg-info' scope='row'>5</th>
-                                    <td><p onclick='show({$title[$i][4]});' >{$title[$i][4]}</p></td>
-                                    <td id='usr5'>{$usr_ans[$i][4]}</td>
-                                    <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
-                                </tr>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>4</th>
+                                        <td><p onclick='show({$title[$i][3]});' >{$title[$i][3]}</p></td>
+                                        <td id='usr4'>{$usr_ans[$i][3]}</td>
+                                        <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
+                                    </tr>
 
-                                <tr>
-                                    <th class='number bg-info' scope='row'>6</th>
-                                    <td><p onclick='show({$title[$i][5]});' >{$title[$i][5]}</p></td>
-                                    <td id='usr6'>{$usr_ans[$i][5]}</td>
-                                    <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
-                                </tr>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>5</th>
+                                        <td><p onclick='show({$title[$i][4]});' >{$title[$i][4]}</p></td>
+                                        <td id='usr5'>{$usr_ans[$i][4]}</td>
+                                        <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
+                                    </tr>
 
-                            </tbody>
-                        </table>
-                    </div> ";
-                
-            }
-        ?>
+                                    <tr>
+                                        <th class='number bg-info' scope='row'>6</th>
+                                        <td><p onclick='show({$title[$i][5]});' >{$title[$i][5]}</p></td>
+                                        <td id='usr6'>{$usr_ans[$i][5]}</td>
+                                        <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
+                                    </tr>
 
-    </div>
+                                </tbody>
+                            </table>
+                        </div> ";
+                    
+                }
+            ?>
 
-    <script src="JS/show.js"></script>
+        </div>
+
+        <script src="JS/show.js"></script>
+
+    <?php
+        else:
+           // 
+            echo "<div class='center'>
+                    <div class='svgPic'>
+                        <svg id='icon-page' viewBox='0 0 178 211' xmlns='http://www.w3.org/2000/svg' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.5'>
+                            <path class='page-outline' fill='none' stroke='#000' stroke-width='15' d='M5.208 5.208h166.667v200H5.208z' />
+                            <path class='page-line blink' d='M138.542 65.778a4.167 4.167 0 0 0-4.167-4.166H42.708a4.166 4.166 0 0 0-4.166 4.166v8.334a4.166 4.166 0 0 0 4.166 4.166h91.667a4.167 4.167 0 0 0 4.167-4.166v-8.334zM138.542 136.305a4.167 4.167 0 0 0-4.167-4.167H42.708a4.167 4.167 0 0 0-4.166 4.167v8.334a4.166 4.166 0 0 0 4.166 4.166h91.667a4.167 4.167 0 0 0 4.167-4.166v-8.334z'
+                                        fill='#ff4776' />
+                        </svg>
+                    </div>
+                    <p id='noLog'>尚無學習紀錄</p>
+                 </div>";
+
+        endif;
+    ?>
 
 <?php
 else:
