@@ -162,47 +162,55 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th class='number bg-info' scope='row'>1</th>
-                                <td><a href='#' onclick='show({$title[$i][0]});' >{$title[$i][0]}</a></td>
-                                <td id='usr1'>{$usr_ans[$i][0]}</td>
-                                <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>1</th>
+                                    <td class='show'>
+                                        <div class='flip' onclick='insert({$title[$i][0]});'>
+                                            <span class='1'>{$title[$i][0]}</span>
+                                        </div>
+                                        <div id='panel{$title[$i][0]}' class='block'>
+                                            <p>{$myarray[$title[$i][0]]['test']}</p>
+                                            <img class='picture' src='{$myarray[$title[$i][0]]['pic']}'>
+                                        </div>
+                                    </td>
+                                    <td id='usr1'>{$usr_ans[$i][0]}</td>
+                                    <td id='ans1'>{$myarray[$title[$i][0]]['right']}</td>
+                                </tr>
 
-                            <tr>
-                                <th class='number bg-info' scope='row'>2</th>
-                                <td><a href='#' onclick='show({$title[$i][1]});' >{$title[$i][1]}</a></td>
-                                <td id='usr2'>{$usr_ans[$i][1]}</td>
-                                <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>2</th>
+                                    <td id ='hint{$title[$i][1]}'><p onclick='show({$title[$i][1]});' >{$title[$i][1]}</p></td>
+                                    <td id='usr2'>{$usr_ans[$i][1]}</td>
+                                    <td id='ans2'>{$myarray[$title[$i][1]]['right']}</td>
+                                </tr>
 
-                            <tr>
-                                <th class='number bg-info' scope='row'>3</th>
-                                <td><a href='#'>{$title[$i][2]}</a></td>
-                                <td id='usr3'>{$usr_ans[$i][2]}</td>
-                                <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>3</th>
+                                    <td><p onclick='show({$title[$i][2]});' >{$title[$i][2]}</p></td>
+                                    <td id='usr3'>{$usr_ans[$i][2]}</td>
+                                    <td id='ans3'>{$myarray[$title[$i][2]]['right']}</td>
+                                </tr>
 
-                            <tr>
-                                <th class='number bg-info' scope='row'>4</th>
-                                <td><a href='#'>{$title[$i][3]}</a></td>
-                                <td id='usr4'>{$usr_ans[$i][3]}</td>
-                                <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>4</th>
+                                    <td><p onclick='show({$title[$i][3]});' >{$title[$i][3]}</p></td>
+                                    <td id='usr4'>{$usr_ans[$i][3]}</td>
+                                    <td id='ans4'>{$myarray[$title[$i][3]]['right']}</td>
+                                </tr>
 
-                            <tr>
-                                <th class='number bg-info' scope='row'>5</th>
-                                <td><a href='#'>{$title[$i][4]}</a></td>
-                                <td id='usr5'>{$usr_ans[$i][4]}</td>
-                                <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>5</th>
+                                    <td><p onclick='show({$title[$i][4]});' >{$title[$i][4]}</p></td>
+                                    <td id='usr5'>{$usr_ans[$i][4]}</td>
+                                    <td id='ans5'>{$myarray[$title[$i][4]]['right']}</td>
+                                </tr>
 
-                            <tr>
-                                <th class='number bg-info' scope='row'>6</th>
-                                <td><a href='#'>{$title[$i][5]}</a></td>
-                                <td id='usr6'>{$usr_ans[$i][5]}</td>
-                                <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
-                            </tr>
+                                <tr>
+                                    <th class='number bg-info' scope='row'>6</th>
+                                    <td><p onclick='show({$title[$i][5]});' >{$title[$i][5]}</p></td>
+                                    <td id='usr6'>{$usr_ans[$i][5]}</td>
+                                    <td id='ans6'>{$myarray[$title[$i][5]]['right']}</td>
+                                </tr>
 
                             </tbody>
                         </table>

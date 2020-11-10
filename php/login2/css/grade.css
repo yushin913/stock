@@ -51,9 +51,39 @@ table tbody{
     font-size: 20px;
 }
 
-p.time{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    font-size: 20px;
+p{
+    margin: 0;
+    /* color: */
+}
+
+/* 收合部分 */
+.flip{
+    margin:0px;
+    /* padding:5px; */
+    text-align:center;
+    /* background:#E09697; */
+    cursor:pointer;
+    font-family:'Arial';
+}
+
+td.show{
+    max-width: 35%;
+}
+
+.block{
+    margin:0px;
+    padding:5px;
+    text-align:center;
+    font-weight: 800;
+    background:#e5eecc;
+    border:solid 1px #c3c3c3;
+    display:none;
+    font-family:'Arial';
+    box-sizing: border-box;
+}
+
+img.picture{ /* 直向橫向可能會有問題 */
+    width: 200px;
+    height: 300px;
+    margin: 8px 0 10px;
 }
