@@ -4,8 +4,8 @@
 
     // 連線
     $host = 'localhost';
-    $dbuser = 'root';
-    $dbpw = '';
+    $dbuser = 's10655035';
+    $dbpw = '6UE637Y3C9';
     $db_name = 'stock';
     $db = mysqli_connect($host,$dbuser,$dbpw,$db_name);
     if($db->connect_error){
@@ -124,19 +124,19 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 36px; font-weight: 700;">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">首頁</a>
+                    <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/getIn.php">首頁</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/FScreen.php">教學</a>
+                    <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/FScreen.php">教學</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/back_exam.php">測驗</a>
+                    <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/back_exam.php">測驗</a>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">紀錄</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php" style="color: #fff;">登出</a>
+                    <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/logout.php" style="color: #fff;">登出</a>
                 </li>
             </ul>
         </div>
@@ -288,7 +288,7 @@
 <?php
 else:
     // 若使用【非登入帳密】的方法來後台
-    header('Location: http://localhost/KLine/php/login2/login.php');
+    header('Location: http://coursesrv.nutn.edu.tw/S10655035/index.php');
 
 endif;
 ?>

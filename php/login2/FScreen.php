@@ -58,7 +58,7 @@
 <?php
 else:
     // 若使用【非登入帳密】的方法來後台
-    header('Location: http://localhost/KLine/php/login2/login.php');
+    header('Location: http://coursesrv.nutn.edu.tw/S10655035/index.php');
 
 endif;
 ?>

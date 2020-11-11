@@ -4,8 +4,8 @@
 
     // 讀取 mySql 資料
     $host = 'localhost';
-    $dbuser = 'root';
-    $dbpw = '';
+    $dbuser = 's10655035';
+    $dbpw = '6UE637Y3C9';
     $db_name = 'stock';
     $db = mysqli_connect($host,$dbuser,$dbpw,$db_name);
     if($db->connect_error){
@@ -45,7 +45,7 @@
                 // echo "密碼：" .$_POST['password'] ."=" . $users[$i]["passwd"] . "<br>";
 
                 // 透過 header 轉址
-                header('Location: http://localhost/KLine/php/login2/getIn.php');
+                header('Location: http://coursesrv.nutn.edu.tw/S10655035/getIn.php');
                 break;
     
             }else {
@@ -54,12 +54,12 @@
                 // echo "wrong <br>";
                 
                 // msg?
-                header('Location: http://localhost/KLine/php/login2/login.php?msg=登入失敗，請確認帳密或進行註冊');
+                header('Location: http://coursesrv.nutn.edu.tw/S10655035/index.php?msg=登入失敗，請確認帳密或進行註冊');
             }
         }
 
     }else {
-        header('Location: http://localhost/KLine/php/login2/login.php?msg=請輸入帳密!');
+        header('Location: http://coursesrv.nutn.edu.tw/S10655035/index.php?msg=請輸入帳密!');
     }
 
 

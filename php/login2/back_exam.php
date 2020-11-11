@@ -30,19 +30,19 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 36px; font-weight: 700;">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/KLine/php/login2/getIn.php">首頁</a>
+              <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/getIn.php">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/KLine/php/login2/FScreen.php">教學</a>
+              <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/FScreen.php">教學</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="http://localhost/KLine/php/login2/back_exam.php">測驗</a>
+              <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/back_exam.php">測驗</a>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/KLine/php/login2/grade.php">紀錄</a>
+                <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/grade.php">紀錄</a>
             </li>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/KLine/php/login2/logout.php" style="color: #fff;">登出</a>
+                <a class="nav-link" href="http://coursesrv.nutn.edu.tw/S10655035/logout.php" style="color: #fff;">登出</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
 
 
     <div class="container">
-        <form action="http://localhost/KLine/php/ansInp.php" method="POST">
+        <form action="http://coursesrv.nutn.edu.tw/S10655035/ansInp.php" method="POST">
             
             <div class="item">
                 <label for="" class="sub">題目1：<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas et sunt laborum doloremque ipsam cum assumenda? Aspernatur necessitatibus unde quo cupiditate beatae accusamus amet atque.</label>
@@ -161,7 +161,7 @@
 <?php
     else:
         // 若使用【非登入帳密】的方法來後台
-        header('Location: http://localhost/KLine/php/login2/login.php');
+        header('Location: http://coursesrv.nutn.edu.tw/S10655035/index.php');
 
     endif;
 ?>

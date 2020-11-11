@@ -2,8 +2,8 @@
 
 <?php
     $host = 'localhost';
-    $dbuser = 'root';
-    $dbpw = '';
+    $dbuser = 's10655035';
+    $dbpw = '6UE637Y3C9';
     $db_name = 'stock';
     $db = mysqli_connect($host,$dbuser,$dbpw,$db_name);
     if($db->connect_error){
@@ -39,7 +39,7 @@
     
     if ($repeat != 0) {
         // 已有該名 user
-        header('Location: http://localhost/KLine/php/login2/signup.php?msg=你所申請的帳密已有人使用，請重新註冊');
+        header('Location: http://coursesrv.nutn.edu.tw/S10655035/signup.php?msg=你所申請的帳密已有人使用，請重新註冊');
 
     } else {
         // 無該名 user，進行註冊
@@ -65,7 +65,7 @@
             echo "
             <script>
                 alert('註冊成功');
-                document.location.href='http://localhost/KLine/php/login2/login.php';
+                document.location.href='http://coursesrv.nutn.edu.tw/S10655035/index.php';
             </script>";
         }
         

@@ -20,13 +20,13 @@
     <?php
         // 使用 isset() 方法，判別有沒有 is_login 變數可使用，有則為為【已登入】
         if(isset($_SESSION['is_login']) && $_SESSION['is_login'] == TRUE):
-            header('Location: http://localhost/KLine/php/login2/getIn.php');
+            header('Location: http://coursesrv.nutn.edu.tw/S10655035/getIn.php');
 
         else:
             // 留在登入頁面
     ?>
         <div class="login container">
-            <form action="http://localhost/KLine/php/login2/userData.php" method='post' enctype='multipart/form-data'>
+            <form action="http://coursesrv.nutn.edu.tw/S10655035/userData.php" method='post' enctype='multipart/form-data'>
 
                 <h2>SIGN UP</h2>
 
@@ -44,7 +44,7 @@
 
                 <div class="btn-group">
                     <button class="btn" type="submit">註冊</button>
-                    <button class="btn"><a href="http://localhost/KLine/php/login2/login.php">返回</a></button>
+                    <button class="btn"><a href="http://coursesrv.nutn.edu.tw/S10655035/index.php">返回</a></button>
                 </div>
                 
             </form>

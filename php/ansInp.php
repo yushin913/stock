@@ -5,8 +5,8 @@
 
     // 連線設定
     $host = 'localhost';
-    $dbuser = 'root';
-    $dbpw = '';
+    $dbuser = 's10655035';
+    $dbpw = '6UE637Y3C9';
     $db_name = 'stock';
     $db = mysqli_connect($host,$dbuser,$dbpw,$db_name);
     if($db->connect_error){
@@ -53,7 +53,7 @@
             echo "
             <script>
                 alert('恭喜！測驗提交成功');
-                document.location.href='http://localhost/KLine/php/login2/grade.php';  /* 網頁導向的頁面 --> 歷程紀錄 */
+                document.location.href='http://coursesrv.nutn.edu.tw/S10655035/grade.php';  /* 網頁導向的頁面 --> 歷程紀錄 */
             </script>";
 
         }

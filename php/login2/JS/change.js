@@ -19,7 +19,7 @@ $(document).ready(
         var an_page = diveLinker.getAttr("1a29214d54a64449adc2d9de1d68b58d");
         if (an_page == 1) {
             
-            document.location.href = "http://localhost/KLine/php/login2/back_exam.php";
+            document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/back_exam.php";
 
             clearInterval(page);
         }

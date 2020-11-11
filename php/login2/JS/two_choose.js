@@ -25,11 +25,11 @@ $(document).ready(
 
                     if (FS == 1) {
                         // console.log("FS");
-                        document.location.href = "http://localhost/KLine/php/login2/FScreen.php";
+                        document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/FScreen.php";
 
                     }else if (grade == 1) {
                         // console.log("gr");
-                        document.location.href = "http://localhost/KLine/php/login2/grade.php";
+                        document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/grade.php";
                     }
                     
                 }, 200);
