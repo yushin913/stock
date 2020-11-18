@@ -46,7 +46,7 @@ var checkComplete = setInterval(() => {
 
             console.log('check_A');
 
-            diveLinker.setProject(13090); // 換圖 DIVE
+            diveLinker.setProject(13568); // 換圖 DIVE (已是新版_1118)
 
             // clearInterval(checkComplete);
 

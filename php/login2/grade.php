@@ -152,7 +152,8 @@
 
             <?php
 
-                for ($i = 0; $i < sizeof($title) ; $i++) { // i 為測驗的次數
+                // 1118_採倒敘呈現【最新的資料會呈現於第一筆】
+                for ($i = intval(sizeof($title))-1 ; $i >= 0 ; $i--) { // i 為測驗的次數
                     $count = $i + 1;
 
                     echo "<div class='grade'>
