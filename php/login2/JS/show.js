@@ -4,7 +4,7 @@ function insert(e) {
     console.log(e); // 輸入值
 
     // 展開收合
-    $("#panel" + e).slideToggle("slow");
+    $(".panel" + e).slideToggle("slow");
     $(".xs1").toggle();  // 查
     $(".xs2").toggle();  // 查
 }

@@ -34,7 +34,7 @@
             
             <form method="post" action="http://coursesrv.nutn.edu.tw/S10655035/check.php">
                 
-                <h2>USER　LOGIN</h2>
+                <h2>使用者登入</h2>
 
                 <?php
                     // 使用 isset 判別有沒有此變數可以使用

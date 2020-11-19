@@ -30,9 +30,9 @@ $.getJSON("formal.json", function (json) {
         order ++; 
         sub[j].innerHTML = "題目" + order + "：<br>" + json[result[j]].test; // 題目的陣列
 
-        reply1[j].innerText = json[result[j]].ans1; // 選項 A 的陣列
-        reply2[j].innerText = json[result[j]].ans2; // 選項 B 的陣列
-        reply3[j].innerText = json[result[j]].ans3; // 選項 C 的陣列
+        reply1[j].innerText = json[result[j]].A; // 選項 A 的陣列
+        reply2[j].innerText = json[result[j]].B; // 選項 B 的陣列
+        reply3[j].innerText = json[result[j]].C; // 選項 C 的陣列
 
         image[j].src = json[result[j]].pic; // 選項若有圖片，則放置圖片；若無圖則，空著
         
