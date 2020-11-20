@@ -20,12 +20,12 @@ $(document).ready(
                 dive.start();
 
                 var loca = setInterval(() => {
-                    var FS = dive.getAttr("db8f71dc0c744426b40b72ae5ca35c45");
+                    var LD = dive.getAttr("db8f71dc0c744426b40b72ae5ca35c45");
                     var grade = dive.getAttr("bf7352f1cf4e48fe96147ffc705bf604");
 
-                    if (FS == 1) {
+                    if (LD == 1) {
                         // console.log("FS");
-                        document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/FScreen.php";
+                        document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/Leading.php";
 
                     }else if (grade == 1) {
                         // console.log("gr");
