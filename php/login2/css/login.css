@@ -62,6 +62,7 @@ form .title{
 
 form .group .inp{
     border-bottom: 2px solid #666;
+    color: #fff;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
