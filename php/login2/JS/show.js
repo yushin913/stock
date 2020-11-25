@@ -1,7 +1,18 @@
 // 使用者點擊【題號】，會進行收合動作
-function insert(e) {
+function insert(e , num) {
     
-    console.log(e); // 輸入值
+    console.log(e , num); // 輸入值
+
+    $.getJSON("formal.json", function (json) {
+        // console.log(JSON.stringify(json));  // 印出整個【JSON檔】的內容
+        // console.log(json[num].pic);
+
+        var img = document.getElementById(e);
+        console.log(img);  // 檢測是否能抓到 tag
+
+        img.src = json[num].pic; // 放入圖片
+        
+    })
 
     // 展開收合
     $(".panel" + e).slideToggle("slow");

@@ -56,14 +56,18 @@
     
       const diveLinker = new DiveLinker("lead");
 
-      var page = setInterval(() => {
-        var an_page = diveLinker.getAttr("1a29214d54a64449adc2d9de1d68b58d");
-        if (an_page == 1) {
-            
-            document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/FScreen.php";
+      var teach = setInterval(() => {
 
-            clearInterval(page);
-        }}, 300);
+        if (diveLinker.checkComplete()) {
+
+          document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/FScreen.php";
+
+          clearInterval(teach);
+          
+        }
+        
+      }, 300);
+
 
     </script>
 
