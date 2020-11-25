@@ -106,7 +106,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/grade.css">
-    <title>股價線圖 -- 新手上路 【學習歷程】</title>
+    <title>新手學股票 --【學習歷程】</title>
     
 </head>
 <body>
@@ -174,9 +174,9 @@
                                             <div class='flip' onclick='insert({$count}1{$title[$i][0]} , {$title[$i][0]});'>
                                                 <span class='1'>{$title[$i][0]}</span>
                                             </div>
-                                            <div class='panel{$count}1{$title[$i][0]} block'>
+                                            <div id='{$count}1{$title[$i][0]}' class='panel{$count}1{$title[$i][0]} block'>
                                                 <p>{$myarray[$title[$i][0]]['test']}</p>
-                                                <img id='{$count}1{$title[$i][0]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}1'>
@@ -203,9 +203,9 @@
                                             <div class='flip' onclick='insert({$count}2{$title[$i][1]} , {$title[$i][1]});'>
                                                 <span class='1'>{$title[$i][1]}</span>
                                             </div>
-                                            <div class='panel{$count}2{$title[$i][1]} block'>
+                                            <div id='{$count}2{$title[$i][1]}' class='panel{$count}2{$title[$i][1]} block'>
                                                 <p>{$myarray[$title[$i][1]]['test']}</p>
-                                                <img id='{$count}2{$title[$i][1]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}2'>
@@ -232,9 +232,9 @@
                                             <div class='flip' onclick='insert({$count}3{$title[$i][2]} , {$title[$i][2]});'>
                                                 <span class='1'>{$title[$i][2]}</span>
                                             </div>
-                                            <div class='panel{$count}3{$title[$i][2]} block'>
+                                            <div id='{$count}3{$title[$i][2]}' class='panel{$count}3{$title[$i][2]} block'>
                                                 <p>{$myarray[$title[$i][2]]['test']}</p>
-                                                <img id='{$count}3{$title[$i][2]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}3'>
@@ -261,9 +261,9 @@
                                             <div class='flip' onclick='insert({$count}4{$title[$i][3]} , {$title[$i][3]});'>
                                                 <span class='1'>{$title[$i][3]}</span>
                                             </div>
-                                            <div class='panel{$count}4{$title[$i][3]} block'>
+                                            <div id='{$count}4{$title[$i][3]}' class='panel{$count}4{$title[$i][3]} block'>
                                                 <p>{$myarray[$title[$i][3]]['test']}</p>
-                                                <img id='{$count}4{$title[$i][3]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}4'>
@@ -290,9 +290,9 @@
                                             <div class='flip' onclick='insert({$count}5{$title[$i][4]} , {$title[$i][4]});'>
                                                 <span class='1'>{$title[$i][4]}</span>
                                             </div>
-                                            <div class='panel{$count}5{$title[$i][4]} block'>
+                                            <div id='{$count}5{$title[$i][4]}' class='panel{$count}5{$title[$i][4]} block'>
                                                 <p>{$myarray[$title[$i][4]]['test']}</p>
-                                                <img id='{$count}5{$title[$i][4]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}5'>
@@ -319,9 +319,9 @@
                                             <div class='flip' onclick='insert({$count}6{$title[$i][5]} , {$title[$i][5]});'>
                                                 <span class='1'>{$title[$i][5]}</span>
                                             </div>
-                                            <div class='panel{$count}6{$title[$i][5]} block'>
+                                            <div id='{$count}6{$title[$i][5]}' class='panel{$count}6{$title[$i][5]} block'>
                                                 <p>{$myarray[$title[$i][5]]['test']}</p>
-                                                <img id='{$count}6{$title[$i][5]}' class='picture' src=''>
+                                                
                                             </div>
                                         </td>
                                         <td id='usr{$count}6'>

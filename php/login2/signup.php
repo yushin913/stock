@@ -11,7 +11,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/login.css">
-    <title>註冊頁面</title>
+    <title>新手學股票 --【註冊】</title>
 
 </head>
 <body>

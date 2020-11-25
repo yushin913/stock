@@ -7,10 +7,17 @@ function insert(e , num) {
         // console.log(JSON.stringify(json));  // 印出整個【JSON檔】的內容
         // console.log(json[num].pic);
 
-        var img = document.getElementById(e);
-        console.log(img);  // 檢測是否能抓到 tag
+        var father = document.getElementById(e);
+        console.log(father);  // 檢測是否能抓到 tag
 
-        img.src = json[num].pic; // 放入圖片
+        if (json[num].pic != '') { // 判斷 formal.json檔中，【pic】是否具有圖片，來進行放入圖片
+            console.log('have');
+
+            var img = document.createElement('img');
+            img.className = "picture";
+            img.src = json[num].pic;
+            father.appendChild(img);
+        }
         
     })
 
