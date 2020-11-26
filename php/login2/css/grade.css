@@ -72,14 +72,16 @@ p.time{
     font-family:'Arial';
 }
 
-td.show{
+/* td.show{
     max-width: 350px;
-}
+} */
 
 .block{
+    max-width: 260px;
+    width: 100%;
     margin:0px;
     padding:5px;
-    text-align:center;
+    text-align: left;
     font-weight: 800;
     background:#e5eecc;
     border:solid 1px #c3c3c3;
@@ -88,10 +90,13 @@ td.show{
     box-sizing: border-box;
 }
 
-img.picture{ /* 直向橫向可能會有問題 */
+img.picture{ /* 圖片的【直向橫向】可能會有問題 */
     width: 200px;
     height: 300px;
     margin: 8px 0 10px;
+    margin: 8px auto 10px;
+    display: block;
+    /* block , 左右 margin auto => 水平置中 */
 }
 
 

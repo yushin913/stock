@@ -38,6 +38,17 @@ $(document).ready(
             }
         }, 200);
 
+        var out = setInterval(() => {
+
+            if (dive.checkComplete()) {
+
+                document.location.href = "http://coursesrv.nutn.edu.tw/S10655035/logout.php";
+
+                clearInterval(out);
+            }
+            
+        }, 300);
+
         
     }
 );
