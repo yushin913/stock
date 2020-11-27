@@ -79,8 +79,8 @@ p.time{
 .block{
     max-width: 260px;
     width: 100%;
-    margin:0px;
-    padding:5px;
+    margin: auto;
+    padding: 5px;
     text-align: left;
     font-weight: 800;
     background:#e5eecc;
