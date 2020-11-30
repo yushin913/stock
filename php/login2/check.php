@@ -33,7 +33,7 @@
         // 直接對傳進來的帳密(資料)進行比對，看該使用者是否註冊
         for ($i=0 ; $i < count($users) ; $i++) { 
             # code...
-            if($_POST['username'] == $users[$i]["usrname"] && $_POST['password'] == $users[$i]["passwd"]){
+            if($_POST['username'] == $users[$i]["usrname"] && $_POST['password'] == $users[$i]["passwd"] && $_POST['username'] != "" && $_POST['password'] != ""){
             
                 // 將 session 加入一個【已登入】的值(紀錄)
                 $_SESSION['is_login'] = TRUE;

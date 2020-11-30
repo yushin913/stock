@@ -19,6 +19,13 @@ body{
     height: 100%;
 }
 
+h5.explain{
+    text-align: center;
+    font-weight: bolder;
+    color: #00f;
+    margin: 12px 0;
+}
+
 /* 表格 */
 .grade{
     /* max-width: 90%; */

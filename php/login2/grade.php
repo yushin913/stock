@@ -149,6 +149,8 @@
 
 
         <div class="container">
+        
+            <h5 class="explain">=== 點擊【題庫題號、您的回答、正確解答】的內容，以查看更多 === </h5>
 
             <?php
 
