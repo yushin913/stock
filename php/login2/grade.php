@@ -174,7 +174,7 @@
                                         <th class='number bg-info' scope='row'>1</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}1{$title[$i][0]} , {$title[$i][0]});'>
-                                                <span class='1'>{$title[$i][0]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][0]}</span>
                                             </div>
                                             <div id='{$count}1{$title[$i][0]}' class='panel{$count}1{$title[$i][0]} block'>
                                                 <p>{$myarray[$title[$i][0]]['test']}</p>
@@ -183,7 +183,7 @@
                                         </td>
                                         <td id='usr{$count}1'>
                                             <div class='flip' onclick='insert({$count}1{$title[$i][0]} , {$title[$i][0]});'>
-                                                <span class='1'>{$usr_ans[$i][0]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][0]}</span>
                                             </div>
                                             <div class='panel{$count}1{$title[$i][0]} block'>
                                                 <p>{$myarray[$title[$i][0]][$usr_ans[$i][0]]}</p>
@@ -191,7 +191,7 @@
                                         </td>
                                         <td id='ans{$count}1'>
                                             <div class='flip' onclick='insert({$count}1{$title[$i][0]} , {$title[$i][0]});'>
-                                                <span class='1'>{$myarray[$title[$i][0]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][0]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}1{$title[$i][0]} block'>
                                                 <p>{$myarray[$title[$i][0]][$myarray[$title[$i][0]]['right']]}</p>
@@ -203,7 +203,7 @@
                                         <th class='number bg-info' scope='row'>2</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}2{$title[$i][1]} , {$title[$i][1]});'>
-                                                <span class='1'>{$title[$i][1]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][1]}</span>
                                             </div>
                                             <div id='{$count}2{$title[$i][1]}' class='panel{$count}2{$title[$i][1]} block'>
                                                 <p>{$myarray[$title[$i][1]]['test']}</p>
@@ -212,7 +212,7 @@
                                         </td>
                                         <td id='usr{$count}2'>
                                             <div class='flip' onclick='insert({$count}2{$title[$i][1]} , {$title[$i][1]});'>
-                                                <span class='1'>{$usr_ans[$i][1]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][1]}</span>
                                             </div>
                                             <div class='panel{$count}2{$title[$i][1]} block'>
                                                 <p>{$myarray[$title[$i][1]][$usr_ans[$i][1]]}</p>
@@ -220,7 +220,7 @@
                                         </td>
                                         <td id='ans{$count}2'>
                                             <div class='flip' onclick='insert({$count}2{$title[$i][1]} , {$title[$i][1]});'>
-                                                <span class='1'>{$myarray[$title[$i][1]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][1]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}2{$title[$i][1]} block'>
                                                 <p>{$myarray[$title[$i][1]][$myarray[$title[$i][1]]['right']]}</p>
@@ -232,7 +232,7 @@
                                         <th class='number bg-info' scope='row'>3</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}3{$title[$i][2]} , {$title[$i][2]});'>
-                                                <span class='1'>{$title[$i][2]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][2]}</span>
                                             </div>
                                             <div id='{$count}3{$title[$i][2]}' class='panel{$count}3{$title[$i][2]} block'>
                                                 <p>{$myarray[$title[$i][2]]['test']}</p>
@@ -241,7 +241,7 @@
                                         </td>
                                         <td id='usr{$count}3'>
                                             <div class='flip' onclick='insert({$count}3{$title[$i][2]} , {$title[$i][2]});'>
-                                                <span class='1'>{$usr_ans[$i][2]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][2]}</span>
                                             </div>
                                             <div class='panel{$count}3{$title[$i][2]} block'>
                                                 <p>{$myarray[$title[$i][2]][$usr_ans[$i][2]]}</p>
@@ -249,7 +249,7 @@
                                         </td>
                                         <td id='ans{$count}3'>
                                             <div class='flip' onclick='insert({$count}3{$title[$i][2]} , {$title[$i][2]});'>
-                                                <span class='1'>{$myarray[$title[$i][2]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][2]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}3{$title[$i][2]} block'>
                                                 <p>{$myarray[$title[$i][2]][$myarray[$title[$i][2]]['right']]}</p>
@@ -261,7 +261,7 @@
                                         <th class='number bg-info' scope='row'>4</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}4{$title[$i][3]} , {$title[$i][3]});'>
-                                                <span class='1'>{$title[$i][3]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][3]}</span>
                                             </div>
                                             <div id='{$count}4{$title[$i][3]}' class='panel{$count}4{$title[$i][3]} block'>
                                                 <p>{$myarray[$title[$i][3]]['test']}</p>
@@ -270,7 +270,7 @@
                                         </td>
                                         <td id='usr{$count}4'>
                                             <div class='flip' onclick='insert({$count}4{$title[$i][3]} , {$title[$i][3]});'>
-                                                <span class='1'>{$usr_ans[$i][3]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][3]}</span>
                                             </div>
                                             <div class='panel{$count}4{$title[$i][3]} block'>
                                                 <p>{$myarray[$title[$i][3]][$usr_ans[$i][3]]}</p>
@@ -278,7 +278,7 @@
                                         </td>
                                         <td id='ans{$count}4'>
                                             <div class='flip' onclick='insert({$count}4{$title[$i][3]} , {$title[$i][3]});'>
-                                                <span class='1'>{$myarray[$title[$i][3]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][3]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}4{$title[$i][3]} block'>
                                                 <p>{$myarray[$title[$i][3]][$myarray[$title[$i][3]]['right']]}</p>
@@ -290,7 +290,7 @@
                                         <th class='number bg-info' scope='row'>5</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}5{$title[$i][4]} , {$title[$i][4]});'>
-                                                <span class='1'>{$title[$i][4]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][4]}</span>
                                             </div>
                                             <div id='{$count}5{$title[$i][4]}' class='panel{$count}5{$title[$i][4]} block'>
                                                 <p>{$myarray[$title[$i][4]]['test']}</p>
@@ -299,7 +299,7 @@
                                         </td>
                                         <td id='usr{$count}5'>
                                             <div class='flip' onclick='insert({$count}5{$title[$i][4]} , {$title[$i][4]});'>
-                                                <span class='1'>{$usr_ans[$i][4]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][4]}</span>
                                             </div>
                                             <div class='panel{$count}5{$title[$i][4]} block'>
                                                 <p>{$myarray[$title[$i][4]][$usr_ans[$i][4]]}</p>
@@ -307,7 +307,7 @@
                                         </td>
                                         <td id='ans{$count}5'>
                                             <div class='flip' onclick='insert({$count}5{$title[$i][4]} , {$title[$i][4]});'>
-                                                <span class='1'>{$myarray[$title[$i][4]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][4]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}5{$title[$i][4]} block'>
                                                 <p>{$myarray[$title[$i][4]][$myarray[$title[$i][4]]['right']]}</p>
@@ -319,7 +319,7 @@
                                         <th class='number bg-info' scope='row'>6</th>
                                         <td class='show'>
                                             <div class='flip' onclick='insert({$count}6{$title[$i][5]} , {$title[$i][5]});'>
-                                                <span class='1'>{$title[$i][5]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$title[$i][5]}</span>
                                             </div>
                                             <div id='{$count}6{$title[$i][5]}' class='panel{$count}6{$title[$i][5]} block'>
                                                 <p>{$myarray[$title[$i][5]]['test']}</p>
@@ -328,7 +328,7 @@
                                         </td>
                                         <td id='usr{$count}6'>
                                             <div class='flip' onclick='insert({$count}6{$title[$i][5]} , {$title[$i][5]});'>
-                                                <span class='1'>{$usr_ans[$i][5]}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$usr_ans[$i][5]}</span>
                                             </div>
                                             <div class='panel{$count}6{$title[$i][5]} block'>
                                                 <p>{$myarray[$title[$i][5]][$usr_ans[$i][5]]}</p>
@@ -336,7 +336,7 @@
                                         </td>
                                         <td id='ans{$count}6'>
                                             <div class='flip' onclick='insert({$count}6{$title[$i][5]} , {$title[$i][5]});'>
-                                                <span class='1'>{$myarray[$title[$i][5]]['right']}</span>
+                                                <span class='1' data-toggle='tooltip' title='點我秀題目'>{$myarray[$title[$i][5]]['right']}</span>
                                             </div>
                                             <div class='panel{$count}6{$title[$i][5]} block'>
                                                 <p>{$myarray[$title[$i][5]][$myarray[$title[$i][5]]['right']]}</p>
@@ -382,5 +382,12 @@ endif;
 
 
 <script src="JS/highLight.js"></script>
+<script>
+    // 滑鼠 hover 小提示框
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
 </body>
 </html>
