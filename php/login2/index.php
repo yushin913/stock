@@ -11,11 +11,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="yuShinLin913">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imgs/favicon.ico" type="image/icon type">
     <title>新手學股票 --【登入】</title>
 
 </head>

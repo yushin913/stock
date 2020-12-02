@@ -7,9 +7,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="yuShinLin913">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/favicon.ico" type="image/icon type">
     <title>新手學股票 --【K線圖教學】</title>
 
 </head>
