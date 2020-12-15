@@ -33,6 +33,14 @@
             // 留在登入頁面
     ?>
         <div class="login container">
+
+            <div class="nameBlock">
+                <div class="logo">
+                    <img src="imgs/15.png" alt="">
+                </div>
+                    
+                <h1 id='sysname'>新手學股票</h1>
+            </div>
             
             <form method="post" action="http://coursesrv.nutn.edu.tw/S10655035/check.php">
                 
