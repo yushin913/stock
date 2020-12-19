@@ -61,7 +61,7 @@ $(document).ready(
 
                 console.log('return');
 
-                diveLinker.setProject(13750); // 教學 DIVE
+                diveLinker.setProject(13765); // 教學 DIVE
 
                 // clearInterval(back);
 

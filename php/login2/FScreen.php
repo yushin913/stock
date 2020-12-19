@@ -25,7 +25,7 @@
     <!-- 點擊 button / F11 變為 FullScreen -->
     <div id="container">
 
-      <iframe src="https://dive.nutn.edu.tw/Experiment/kaleTestExperiment5.jsp?eid=13750&record=false" id="KLine" name="dive1"></iframe>
+      <iframe src="https://dive.nutn.edu.tw/Experiment/kaleTestExperiment5.jsp?eid=13765&record=false" id="KLine" name="dive1"></iframe>
 
       <!-- FS 提示方法 - 法1 -->
       <div class="notice">
