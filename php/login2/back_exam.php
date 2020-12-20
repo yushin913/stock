@@ -25,7 +25,7 @@
     if(isset($_SESSION['is_login']) && $_SESSION['is_login']== TRUE):
 ?>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light" style = "background-color: #48c9b0; box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);" >
         <a class="navbar-brand mb-0 h1" href="#" style="font-size: 25px;"><?php echo '使用者：' . $_SESSION['usr_now']; ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
