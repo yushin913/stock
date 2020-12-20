@@ -11,12 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>  
     <link rel="icon" href="imgs/favicon.ico" type="image/icon type">
     <title>新手學股票 --【註冊】</title>
 
 </head>
-<body>
+<body class="body">
 
 <!-- 當要傳檔案時，必須加上 enctype='multipart/form-data' -->
     <?php
@@ -27,39 +29,39 @@
         else:
             // 留在登入頁面
     ?>
-        <div class="login container">
 
-            <div class="nameBlock">
-                <div class="logo">
-                    <img src="imgs/15.png" alt="">
-                </div>
-                    
-                <h1 id='sysname'>新手學股票</h1>
-            </div>
-        
-            <form action="http://coursesrv.nutn.edu.tw/S10655035/userData.php" method='post' enctype='multipart/form-data'>
+        <div class="login-page">
+            <div class="form">
 
-                <h2>使用者註冊</h2>
+                <form method='post' action="http://coursesrv.nutn.edu.tw/S10655035/userData.php" enctype='multipart/form-data'>
 
-                <?php
-                    // 使用 isset 判別有沒有此變數可以使用
-                    if(isset($_GET['msg'])){
-                        echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
-                    }
-                ?>
+                    <img src="imgs/logo.png" alt="logo">
 
-                <div class="group">
-                    <label class="title" for="">帳號：<input class="inp" type="text" name="usrname" placeholder="註冊帳號 (限英文、數字)"></label>
-                    <label class="title" for="">密碼：<input class="inp" type="password" name="passwd" placeholder="註冊密碼 (限英文、數字)"></label>
-                </div>
+                    <?php
+                        // 使用 isset 判別有沒有此變數可以使用
+                        if(isset($_GET['msg'])){
+                            echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
+                        }
+                    ?>
+                        
+                    <input type="text" name="usrname" placeholder="&#xf007; 取個使用者名稱吧！"/>
+                    <input type="password" name="passwd" placeholder="&#xf023; 註冊使用者密碼"/>
 
-                <div class="btn-group">
-                    <button class="btn" type="submit">註冊</button>
-                    <button class="btn"><a href="http://coursesrv.nutn.edu.tw/S10655035/index.php">返回</a></button>
-                </div>
+                    <button type="submit">SIGN UP</button>
                 
-            </form>
+                </form>
+
+                <button id='back' onclick="back();">BACK</button>
+                
+                
+            </div>
         </div>
+
+    <script>
+        function back() {
+            location.href = "http://coursesrv.nutn.edu.tw/S10655035/index.php";
+        }
+    </script>
 
     <?php endif; ?>
 

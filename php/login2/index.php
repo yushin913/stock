@@ -16,13 +16,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/login_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>  
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
     <link rel="icon" href="imgs/favicon.ico" type="image/icon type">
     <title>新手學股票 --【登入】</title>
 
 </head>
 
-<body>
+<body class="body">
 
     <?php
         // 使用 isset() 方法，判別有沒有 is_login 變數可使用，有則為為【已登入】
@@ -32,40 +35,37 @@
         else:
             // 留在登入頁面
     ?>
-        <div class="login container">
+        <div class="login-page">
+            <div class="form">
 
-            <div class="nameBlock">
-                <div class="logo">
-                    <img src="imgs/15.png" alt="">
-                </div>
-                    
-                <h1 id='sysname'>新手學股票</h1>
+                <form method="post" action="http://coursesrv.nutn.edu.tw/S10655035/check.php">
+                
+                    <img src="imgs/logo.png" alt="logo">
+
+                    <?php
+                        // 使用 isset 判別有沒有此變數可以使用
+                        if(isset($_GET['msg'])){
+                            echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
+                        }
+                    ?>
+
+                    <input type="text" name="username" placeholder="&#xf007;  使用者名稱"/>
+                    <input type="password" name="password" placeholder="&#xf023;  使用者密碼"/>
+                    <button>LOGIN</button>
+                    <!-- <p class="message"></p> -->
+                </form>
+
+                
+                    <button id='signup' onclick="sign();">SIGN UP</button>
+                
             </div>
-            
-            <form method="post" action="http://coursesrv.nutn.edu.tw/S10655035/check.php">
-                
-                <h2>使用者登入</h2>
-
-                <?php
-                    // 使用 isset 判別有沒有此變數可以使用
-                    if(isset($_GET['msg'])){
-                        echo "<p class='error'>{$_GET['msg']}</p>"; // 印出 $_GET['msg'] 的資料(內容)
-                    }
-                ?>
-
-                <div class="group">
-                    <label class="title" for="">帳號：<input class="inp" type="text" name="username" placeholder=""></label>
-                    <label class="title" for="">密碼：<input class="inp" type="password" name="password" placeholder=""></label>
-                </div>
-
-                <div class="btn-group">
-                    <button class="btn" type="submit">登入</button>
-                    <button class="btn"><a href="http://coursesrv.nutn.edu.tw/S10655035/signup.php">註冊</a></button>
-                </div>
-                
-            </form>
-
         </div>
+
+        <script>
+            function sign() {
+                location.href = "http://coursesrv.nutn.edu.tw/S10655035/signup.php";
+            }
+        </script>
         
     <?php endif; ?>
 
