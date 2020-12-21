@@ -3,15 +3,16 @@ html, body{
 }
 
 body{
-    /* background-color: #332d2c; */
-    background: url("../imgs/Gray-plain-website-background.jpg") no-repeat center center / cover ;
+    background-color: #F9BF45;
+    /* background: url("../imgs/Gray-plain-website-background.jpg") no-repeat center center / cover ; */
+
 }
 
 div.container{
     max-width: 70%;
     /* min-width: 400px; */
     margin: auto;
-    border: 5px solid#48c9b0;
+    border: 5px solid#000;
     padding: 25px 45px;
     margin-top: 2em;
     margin-bottom: 2em;
